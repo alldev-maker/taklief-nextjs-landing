@@ -37,10 +37,10 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("whatDoYouNeed")}
+                {t("what_do_you_need")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("postTaskDescription")}
+                {t("post_task_desc")}
               </p>
             </motion.div>
             <motion.div
@@ -60,7 +60,7 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("assignPerson")}
+                {t("assgin_person")}
               </h4>
               <p className="text-[17px] font-display font-normal">
                 {t(
@@ -84,7 +84,7 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("taskCompleted")}
+                {t("task_completed")}
               </h4>
               <p className="text-[17px] font-display font-normal">
                 {t(

@@ -18,7 +18,7 @@ const Category = (props: any) => {
         <motion.div variants={scrollAnimation}>
           <section className="container mx-auto text-center">
             <h4 className="text-general-default font-display font-bold text-xl my-5">
-              {t("getItDone")}
+              {t("get_it_done")}
             </h4>
             <div className="flex flex-row flex-wrap justify-center space-x-4">
               {category &&
@@ -56,10 +56,10 @@ const Category = (props: any) => {
           className="pt-[85px] pb-[45px] text-center"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
-            {t("labourExchange")}
+            {t("labour_exchange")}
           </h4>
           <p className="text-general-default text-[17px] font-display font-normal">
-            {t("aboutTaklief")}
+            {t("about_taklief")}
           </p>
         </motion.div>
       </ScrollAnimationWrapper>

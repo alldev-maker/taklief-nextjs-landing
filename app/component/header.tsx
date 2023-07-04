@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container z-10 mx-auto mb-12">
         <section className="mt-60 px-52 text-center">
           <h1 className="text-charcoal-default font-semibold text-6xl font-display">
-            {t("homepageHeadline")}
+            {t("homepage_headline")}
           </h1>
           <Image
             src={Landing}
@@ -29,7 +29,7 @@ const Header = () => {
           <ScrollAnimationWrapper>
             <motion.div variants={scrollAnimation}>
               <p className="text-3xl text-charcoal-default font-display font-bold leading-extra-large">
-                {t("madeForCommunity")}
+                {t("made_for_community")}
               </p>
               <Image
                 src={Community}
