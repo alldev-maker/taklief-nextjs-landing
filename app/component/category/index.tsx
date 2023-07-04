@@ -1,12 +1,26 @@
 "use client";
 import React, { useMemo, useEffect } from "react";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../utils/ScrollAnimationWrapper";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../../utils/ScrollAnimationWrapper";
 import Test1 from "../../public/test.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import ReviewItem from "./review-item";
 
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 5000,
+  autoplaySpeed: 5000,
+  centerMode: true,
+  variableWidth: true,
+  cssEase: "linear",
+};
 const Category = (props: any) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const { category } = props;
@@ -63,6 +77,23 @@ const Category = (props: any) => {
           </p>
         </motion.div>
       </ScrollAnimationWrapper>
+      <div className="w-full overflow-hidden mb-16">
+        <Slider {...settings}>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+        <div className="mt-3" />
+        <Slider {...settings} rtl>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+      </div>
     </>
   );
 };

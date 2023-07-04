@@ -26,14 +26,13 @@ export default function Home() {
     });
     //
   }, []);
-  
-  return (
 
-      <main>
-        <Header />
-        <Category category={category} />
-        <Card/>
-        <Footer/>
-      </main>
+  return (
+    <main>
+      <Header />
+      <Category category={category} />
+      <Card />
+      <Footer />
+    </main>
   );
 }
