@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 
 const Card = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -37,10 +37,10 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("What do you need done?")}
+                {t("whatDoYouNeed")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("Start by telling us about your task. Mention when and where (in person or remotely) you need it done, then suggest a fair budget for the task. Post any task, literally!")}
+                {t("postTaskDescription")}
               </p>
             </motion.div>
             <motion.div
@@ -60,10 +60,12 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("Assign the best person for you")}
+                {t("assignPerson")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("Take a look at profiles and reviews to pick the best Tasker for your task. when you accept an offer, your payment is held securely with Taklief Pay  until the task is complete. Now you can message and call the Tasker to sort out the details.")}
+                {t(
+                  "Take a look at profiles and reviews to pick the best Tasker for your task. when you accept an offer, your payment is held securely with Taklief Pay  until the task is complete. Now you can message and call the Tasker to sort out the details."
+                )}
               </p>
             </motion.div>
             <motion.div
@@ -82,10 +84,12 @@ const Card = () => {
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("Task completed")}
+                {t("taskCompleted")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("With your task complete, you just need to release the payment held with Taklief Pay. Then you’re free to leave a review for the Tasker so everyone can know what a great job they’ve done!.")}
+                {t(
+                  "With your task complete, you just need to release the payment held with Taklief Pay. Then you’re free to leave a review for the Tasker so everyone can know what a great job they’ve done!."
+                )}
               </p>
             </motion.div>
           </div>

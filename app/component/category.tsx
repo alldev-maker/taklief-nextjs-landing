@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 const Category = (props: any) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const { category } = props;
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -18,7 +18,7 @@ const Category = (props: any) => {
         <motion.div variants={scrollAnimation}>
           <section className="container mx-auto text-center">
             <h4 className="text-general-default font-display font-bold text-xl my-5">
-              {t("Get it Done")}
+              {t("getItDone")}
             </h4>
             <div className="flex flex-row flex-wrap justify-center space-x-4">
               {category &&
@@ -56,10 +56,10 @@ const Category = (props: any) => {
           className="pt-[85px] pb-[45px] text-center"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
-            {t("Reimagning how labout is exchanged in the real world")}
+            {t("labourExchange")}
           </h4>
           <p className="text-general-default text-[17px] font-display font-normal">
-            {t("Taklief is a Saudi platform based in Riyadh that provides mobile marketplace to enable users to outsource their daily tasks. Users describe the task and set its budget, then community members place their bids to attempt to complete the task.")}
+            {t("aboutTaklief")}
           </p>
         </motion.div>
       </ScrollAnimationWrapper>
