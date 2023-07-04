@@ -20,7 +20,7 @@ const Category = (props: any) => {
             <h4 className="text-general-default font-display font-bold text-xl my-5">
               {t("get_it_done")}
             </h4>
-            <div className="flex flex-row flex-wrap justify-center space-x-4">
+            {/* <div className="flex flex-row flex-wrap justify-center space-x-4">
               {category &&
                 category?.map((item: any, index: number) => {
                   return (
@@ -46,19 +46,19 @@ const Category = (props: any) => {
                     </motion.div>
                   );
                 })}
-            </div>
+            </div> */}
           </section>
         </motion.div>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper>
         <motion.div
           variants={scrollAnimation}
-          className="pt-[85px] pb-[45px] text-center"
+          className="pt-[85px] pb-[45px] text-center container"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
             {t("labour_exchange")}
           </h4>
-          <p className="text-general-default text-[17px] font-display font-normal">
+          <p className="text-general-default text-[17px] font-display font-normal max-w-6xl mx-auto">
             {t("about_taklief")}
           </p>
         </motion.div>

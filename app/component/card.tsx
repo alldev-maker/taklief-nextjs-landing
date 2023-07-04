@@ -19,18 +19,7 @@ const Card = () => {
       <ScrollAnimationWrapper>
         <section className="container mx-auto text-center mb-[15px]">
           <div className="flex flex-cols space-x-3.5 justify-center">
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px]
-              hover:border-primary hover:shadow-orange-700 transition-all 
-              "
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
               <Image
                 src={RightPerson}
                 className="w-auto h-auto mb-5"
@@ -42,18 +31,8 @@ const Card = () => {
               <p className="text-[17px] font-display font-normal">
                 {t("post_task_desc")}
               </p>
-            </motion.div>
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px]
-              hover:border-primary hover:shadow-orange-700 transition-all"
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+            </div>
+            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
               <Image
                 src={TaskComplete}
                 className="w-auto h-auto mb-5 mx-auto"
@@ -65,17 +44,8 @@ const Card = () => {
               <p className="text-[17px] font-display font-normal">
                 {t("take_look")}
               </p>
-            </motion.div>
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px] hover:border-primary hover:shadow-orange-700 transition-all"
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+            </div>
+            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
               <Image
                 src={Accomplish}
                 className="w-full h-auto mb-5"
@@ -87,7 +57,7 @@ const Card = () => {
               <p className="text-[17px] font-display font-normal">
                 {t("task_completion_message")}
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
       </ScrollAnimationWrapper>
