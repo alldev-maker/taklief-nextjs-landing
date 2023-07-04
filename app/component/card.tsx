@@ -63,9 +63,7 @@ const Card = () => {
                 {t("assgin_person")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t(
-                  "Take a look at profiles and reviews to pick the best Tasker for your task. when you accept an offer, your payment is held securely with Taklief Pay  until the task is complete. Now you can message and call the Tasker to sort out the details."
-                )}
+                {t("take_look")}
               </p>
             </motion.div>
             <motion.div
@@ -87,9 +85,7 @@ const Card = () => {
                 {t("task_completed")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t(
-                  "With your task complete, you just need to release the payment held with Taklief Pay. Then you’re free to leave a review for the Tasker so everyone can know what a great job they’ve done!."
-                )}
+                {t("task_completion_message")}
               </p>
             </motion.div>
           </div>

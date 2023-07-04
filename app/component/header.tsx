@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <div className="container z-10 mx-auto mb-12">
         <section className="mt-60 px-52 text-center">
-          <h1 className="text-charcoal-default font-semibold text-6xl font-display">
+          <h1 className="text-charcoal-default font-semibold text-6xl font-display h-[350px]">
             {t("homepage_headline")}
           </h1>
           <Image

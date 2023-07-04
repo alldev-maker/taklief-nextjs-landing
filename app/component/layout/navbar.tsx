@@ -84,7 +84,7 @@ const Navbar = () => {
         </ul>
         <div className="col-start-8 col-end-12 font-medium flex justify-end items-center">
           <div
-            className="flex"
+            className="flex cursor-pointer"
             onClick={() => {
               console.log("clik");
               switchLan();
