@@ -22,7 +22,7 @@ const Category = (props: any) => {
             </h4>
             <div className="flex flex-row flex-wrap justify-center space-x-4">
               {category &&
-                category.map((item: any, index: number) => {
+                category?.map((item: any, index: number) => {
                   return (
                     <motion.div
                       className="space-y-3.5 text-center"

@@ -1,6 +1,5 @@
 "use client";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Link as LinkScroll } from "react-scroll";
 import React, { useState, useEffect } from "react";
 import ButtonOutline from "./misc/ButtonOutline";
@@ -9,7 +8,6 @@ import Link from "next/link";
 import navIcon from "../public/navIcon.png";
 import saudiFlag from "../public/saudiFlag.png";
 import Head from "next/head";
-const inter = Inter({ subsets: ["latin"] });
 
 
 import { I18nextProvider } from "react-i18next";
@@ -46,7 +44,7 @@ function RootLayout({
   return (
 
     <html>
-      <body className={inter.className}>
+      <body>
         <div
           className={
             "fixed top-0 w-full z-30 bg-white-500 transition-all " +
@@ -117,7 +115,7 @@ function RootLayout({
                     i18n.changeLanguage('en')
                 }}>
                 <p className="font-bold text-base mr-2">{
-                  i18n.language === 'en' ? 'عربي' : 'EN'
+                  i18n.language === 'en' ? 'عربي' : 'en'
                 }</p>
                 <Image
                   src={saudiFlag}

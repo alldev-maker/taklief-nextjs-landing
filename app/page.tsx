@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Test from "./component/header";
+import Header from "./component/header";
 import Category from "./component/category";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -17,6 +17,7 @@ const getCategory = async () => {
     return error;
   }
 };
+
 export default function Home() {
   const [category, setCategory] = useState([]);
   useEffect(() => {
@@ -25,10 +26,11 @@ export default function Home() {
     });
     //
   }, []);
+  
   return (
 
       <main>
-        <Test />
+        <Header />
         <Category category={category} />
         <Card/>
         <Footer/>
