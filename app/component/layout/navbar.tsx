@@ -5,7 +5,8 @@ import Link from "next/link";
 import i18n, { switchLan } from "../../i18n";
 import ButtonOutline from "../../misc/ButtonOutline";
 import navIcon from "../../../public/navIcon.png";
-import saudiFlag from "../../../public/saudiFlag.png";
+import arabicFl from "../../../public/arabic.png";
+import englandFl from "../../../public/england.png";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -94,11 +95,9 @@ const Navbar = () => {
               {i18n.language === "en" ? "عربي" : "en"}
             </p>
             <Image
-              src={saudiFlag}
-              className="w-auto h-auto"
-              alt={"asdf"}
-              width={24}
-              height={24}
+              src={i18n.language === "en" ? englandFl : arabicFl}
+              className="w-[24px] h-[24px]"
+              alt={"Language"}
             />
           </div>
           <Link
