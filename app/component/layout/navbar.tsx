@@ -59,7 +59,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="font-medium flex justify-end items-center lg:ml-14 sm:ml-4">
-          <div className="flex cursor-pointer" onClick={() => switchLan}>
+          <div className="flex cursor-pointer" onClick={switchLan}>
             <p className="font-bold text-base mr-2">
               {i18n.language === "en" ? "عربي" : "en"}
             </p>
