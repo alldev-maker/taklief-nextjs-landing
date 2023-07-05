@@ -1,11 +1,10 @@
 "use client";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Header from "./component/header";
 import Category from "./component/category";
 import axios from "axios";
-import { useEffect, useState } from "react";
 import Card from "./component/card";
-import Footer from "./component/footer";
+import Footer from "./component/layout/footer";
 
 const serverUrl = "http://8.213.23.19/api";
 const getCategory = async () => {
@@ -28,11 +27,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <>
       <Header />
       <Category category={category} />
       <Card />
-      <Footer />
-    </main>
+    </>
   );
 }

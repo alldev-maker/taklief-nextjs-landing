@@ -35,89 +35,85 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={
-        "fixed top-0 w-full z-30 bg-white" +
-        (scrollActive ? " shadow-md py-5" : " py-5")
-      }
-    >
-      <div className="max-w-7xl lg:px-8 px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div className="flex items-center w-[50px] h-[50px] mr-auto">
-          <Image
-            src={navIcon}
-            className="h-8 w-auto w-[50px] h-[50px]"
-            alt={"Logo"}
-            width={50}
-            height={50}
-          />
-        </div>
-
-        <ul className="hidden lg:flex text-black-500 items-center">
-          {navList.map((navItem: string) => (
-            <div
-              key={navItem}
-              className={
-                "text-base px-4 cursor-pointer h-full flex items-center inline-block relative text-[17px]" +
-                (activeLink === navItem
-                  ? " font-bold animation-active "
-                  : " text-black-500 ")
-              }
-            >
-              {t(navItem)}
-            </div>
-          ))}
-        </ul>
-
-        <div className="font-medium flex justify-end items-center lg:ml-14 sm:ml-4">
-          <div className="flex cursor-pointer" onClick={switchLan}>
-            <p className="font-bold text-base mr-2 lg:block hidden">
-              {i18n.language === "en" ? "عربي" : "en"}
-            </p>
-            <Image
-              src={i18n.language === "en" ? arabicFl : englandFl}
-              className="w-[24px] h-[24px]"
-              alt={"Language"}
-            />
+    <header>
+      <nav
+        className={
+          "fixed top-0 z-30 w-full bg-white" +
+          (scrollActive ? " py-5 shadow-md" : " py-5")
+        }
+      >
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-4 lg:px-8">
+          <div className="mr-auto flex h-[50px] w-[50px] items-center">
+            <Image src={navIcon} className="h-[50px] w-[50px]" alt={"Logo"} />
           </div>
-          <div className="lg:flex hidden mx-4 my-auto lg:ml-14">
-            <ButtonOutline>iOS APP</ButtonOutline>
-          </div>
-          <div className="lg:block hidden">
-            <ButtonOutline>WebApp</ButtonOutline>
-          </div>
-        </div>
-        <Image
-          onClick={toggleMenu}
-          src={!isMenuOpen ? hambergerIcon : closeIcon}
-          alt="expand"
-          className="w-5 h-5 ml-4 items-center my-auto lg:hidden cursor-pointer"
-        />
 
-        <div
-          className={`items-center justify-between w-screen transition-all overflow-hidden ${
-            isMenuOpen ? "h-[100vh]" : "h-0"
-          }`}
-          id="navbar-sticky"
-        >
-          <ul className="flex h-full w-full flex-col py-4 px-8 mt-4 font-medium bg-white">
-            {navList.map((navItem, index) => (
-              <li key={index}>
-                <div
-                  className={
-                    "font-bold border border-1 border-[#C5CDD9]	rounded-[50px] flex my-6 px-5 py-3 place-content-center" +
-                    (activeLink === navItem
-                      ? " text-white bg-[#6EB925]"
-                      : " text-black-500 bg-[#F5F7FA]")
-                  }
-                >
-                  {t(navItem)}
-                </div>
+          <ul className="text-black-500 hidden items-center lg:flex">
+            {navList.map((navItem: string) => (
+              <li
+                key={navItem}
+                className={
+                  "relative flex h-full cursor-pointer items-center px-4 text-[17px] text-base" +
+                  (activeLink === navItem
+                    ? " animation-active font-bold "
+                    : " text-black-500 ")
+                }
+              >
+                {t(navItem)}
               </li>
             ))}
           </ul>
+
+          <div className="flex items-center justify-end font-medium sm:ml-4 lg:ml-14">
+            <div className="flex cursor-pointer" onClick={switchLan}>
+              <p className="mr-2 hidden text-base font-bold lg:block">
+                {i18n.language === "en" ? "عربي" : "en"}
+              </p>
+              <Image
+                src={i18n.language === "en" ? arabicFl : englandFl}
+                className="h-[24px] w-[24px]"
+                alt={"Language"}
+              />
+            </div>
+            <div className="mx-4 my-auto hidden lg:ml-14 lg:flex">
+              <ButtonOutline>iOS APP</ButtonOutline>
+            </div>
+            <div className="hidden lg:block">
+              <ButtonOutline>WebApp</ButtonOutline>
+            </div>
+          </div>
+          <Image
+            onClick={toggleMenu}
+            src={!isMenuOpen ? hambergerIcon : closeIcon}
+            alt="expand"
+            className="my-auto ml-4 h-5 w-5 cursor-pointer items-center lg:hidden"
+          />
+
+          <div
+            className={`w-screen items-center justify-between overflow-hidden transition-all ${
+              isMenuOpen ? "h-[100vh]" : "h-0"
+            }`}
+            id="navbar-sticky"
+          >
+            <ul className="mt-4 flex h-full w-full flex-col bg-white px-8 py-4 font-medium">
+              {navList.map((navItem, index) => (
+                <li key={index}>
+                  <div
+                    className={
+                      "border-1 my-6 flex place-content-center	rounded-[50px] border border-[#C5CDD9] px-5 py-3 font-bold" +
+                      (activeLink === navItem
+                        ? " bg-[#6EB925] text-white"
+                        : " text-black-500 bg-[#F5F7FA]")
+                    }
+                  >
+                    {t(navItem)}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

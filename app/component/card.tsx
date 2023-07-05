@@ -17,46 +17,46 @@ const Card = () => {
   return (
     <>
       <ScrollAnimationWrapper>
-        <section className="container mx-auto text-center mb-[15px]">
-          <div className="flex lg:flex-row flex-col space-y-3.5 lg:space-x-3.5 lg:space-y-0 px-4 justify-center mx-auto place-content-center items-center">
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
+        <section className="container mx-auto mb-[15px] text-center">
+          <div className="mx-auto flex flex-col place-content-center items-center justify-center space-y-3.5 px-4 lg:flex-row lg:space-x-3.5 lg:space-y-0">
+            <div className="flex h-auto w-full flex-col rounded border px-[21px] pb-10 text-center lg:h-[627px]">
               <Image
                 src={RightPerson}
-                className="w-[370px] h-auto lg:h-[370px] mb-5"
+                className="mb-5 h-auto max-h-[370px] w-auto max-w-[370px]"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+              <h4 className="mb-6 font-display text-xl font-bold text-general-default lg:mb-[30px]">
                 {t("what_do_you_need")}
               </h4>
-              <p className="text-[17px] font-display font-normal">
+              <p className="font-display text-[17px] font-normal">
                 {t("post_task_desc")}
               </p>
             </div>
 
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
+            <div className="flex h-auto w-full flex-col rounded border px-[21px] pb-10 text-center lg:h-[627px]">
               <Image
                 src={TaskComplete}
-                className="w-[370px] h-auto lg:h-[370px] mb-5 mx-auto"
+                className="mx-auto mb-5 h-auto max-h-[370px] w-auto max-w-[370px]"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+              <h4 className="mb-6 font-display text-xl font-bold text-general-default lg:mb-[30px]">
                 {t("assgin_person")}
               </h4>
-              <p className="text-[17px] font-display font-normal">
+              <p className="font-display text-[17px] font-normal">
                 {t("take_look")}
               </p>
             </div>
 
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
+            <div className="flex h-auto w-full flex-col rounded border px-[21px] pb-10 text-center lg:h-[627px]">
               <Image
                 src={Accomplish}
-                className="w-[370px] h-auto lg:h-[370px] mb-5"
+                className="mb-5 h-auto max-h-[370px] w-auto max-w-[370px]"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+              <h4 className="mb-6 font-display text-xl font-bold text-general-default lg:mb-[30px]">
                 {t("task_completed")}
               </h4>
-              <p className="text-[17px] font-display font-normal">
+              <p className="font-display text-[17px] font-normal">
                 {t("task_completion_message")}
               </p>
             </div>

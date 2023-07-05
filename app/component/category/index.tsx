@@ -29,7 +29,7 @@ const Category = (props: any) => {
       <ScrollAnimationWrapper>
         <motion.div variants={scrollAnimation}>
           <section className="container mx-auto text-center">
-            <h4 className="text-general-default font-display font-bold text-xl my-5">
+            <h4 className="my-5 font-display text-xl font-bold text-general-default">
               {t("get_it_done")}
             </h4>
             {/* <div className="flex flex-row flex-wrap justify-center space-x-4">
@@ -65,17 +65,17 @@ const Category = (props: any) => {
       <ScrollAnimationWrapper>
         <motion.div
           variants={scrollAnimation}
-          className="pt-[85px] pb-[45px] text-center container mx-auto px-6"
+          className="container mx-auto px-6 pb-[45px] pt-[85px] text-center"
         >
-          <h4 className="text-general-default text-xl font-display font-bold">
+          <h4 className="font-display text-xl font-bold text-general-default">
             {t("labour_exchange")}
           </h4>
-          <p className="text-general-default text-[17px] font-display font-normal max-w-6xl mx-auto">
+          <p className="mx-auto max-w-6xl font-display text-[17px] font-normal text-general-default">
             {t("about_taklief")}
           </p>
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="w-full overflow-hidden mb-16">
+      <div className="mb-16 w-full overflow-hidden">
         <Slider {...settings}>
           {Array(10)
             .fill(0)

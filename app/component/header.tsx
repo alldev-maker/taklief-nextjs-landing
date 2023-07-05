@@ -12,13 +12,13 @@ const Header = () => {
   return (
     <>
       <div className="container z-10 mx-auto mb-12">
-        <section className="lg:mt-60 mt-32 text-center flex flex-col">
-          <h1 className="px-2 md:px-8 lg:px-20 text-charcoal-default font-semibold text-4xl md:text-5xl lg:text-6xl font-display h-[280px] md:h-[320px] lg:h-[350px]">
+        <section className="mt-32 flex flex-col text-center lg:mt-60">
+          <h1 className="h-[280px] px-2 font-display text-4xl font-semibold text-charcoal-default md:h-[320px] md:px-8 md:text-5xl lg:h-[350px] lg:px-20 lg:text-6xl">
             {t("homepage_headline")}
           </h1>
 
-          <div className="lg:hidden flex mx-auto items-center w-full place-content-center mt-4">
-            <div className="flex mx-4 my-auto lg:ml-14">
+          <div className="mx-auto mt-4 flex w-full place-content-center items-center lg:hidden">
+            <div className="mx-4 my-auto flex lg:ml-14">
               <ButtonOutline>iOS APP</ButtonOutline>
             </div>
             <div className="flex">
@@ -27,17 +27,17 @@ const Header = () => {
           </div>
           <Image
             src={Landing}
-            className="max-w-xl w-full h-auto text-center mx-auto my-14 px-4"
+            className="mx-auto my-14 h-auto w-full max-w-xl px-4 text-center"
             alt="No Img"
           />
         </section>
         <div>
-          <p className="max-w-6xl text-3xl text-center mx-auto text-charcoal-default font-display font-bold leading-extra-large">
+          <p className="mx-auto max-w-6xl text-center font-display text-3xl font-bold leading-extra-large text-charcoal-default">
             {t("made_for_community")}
           </p>
           <Image
             src={Community}
-            className="w-auto h-auto text-center mx-auto"
+            className="mx-auto h-auto w-auto text-center"
             alt="No Img"
           />
         </div>
