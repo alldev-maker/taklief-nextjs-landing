@@ -1,13 +1,11 @@
 "use client";
-import React, { useMemo, useEffect } from "react";
-import getScrollAnimation from "../../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../../utils/ScrollAnimationWrapper";
-import Test1 from "../../public/test.png";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import ReviewItem from "./review-item";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../../utils/ScrollAnimationWrapper";
 
 const settings = {
   dots: true,
@@ -67,7 +65,7 @@ const Category = (props: any) => {
       <ScrollAnimationWrapper>
         <motion.div
           variants={scrollAnimation}
-          className="pt-[85px] pb-[45px] text-center container"
+          className="pt-[85px] pb-[45px] text-center container mx-auto"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
             {t("labour_exchange")}
