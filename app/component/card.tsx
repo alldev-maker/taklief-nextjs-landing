@@ -18,11 +18,11 @@ const Card = () => {
     <>
       <ScrollAnimationWrapper>
         <section className="container mx-auto text-center mb-[15px]">
-          <div className="flex flex-cols space-x-3.5 justify-center">
-            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
+          <div className="flex lg:flex-row flex-col space-y-3.5 lg:space-x-3.5 lg:space-y-0 px-4 justify-center mx-auto place-content-center items-center h-[627px]">
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
               <Image
                 src={RightPerson}
-                className="w-auto h-auto mb-5"
+                className="w-[370px] h-auto mb-5"
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
@@ -32,10 +32,11 @@ const Card = () => {
                 {t("post_task_desc")}
               </p>
             </div>
-            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
+
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
               <Image
                 src={TaskComplete}
-                className="w-auto h-auto mb-5 mx-auto"
+                className="w-[370px] h-auto mb-5 mx-auto"
                 alt="no Img"
               />
               <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
@@ -45,7 +46,8 @@ const Card = () => {
                 {t("take_look")}
               </p>
             </div>
-            <div className="border rounded px-[21px] py-[53px] text-center max-w-[371px]">
+
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
               <Image
                 src={Accomplish}
                 className="w-full h-auto mb-5"

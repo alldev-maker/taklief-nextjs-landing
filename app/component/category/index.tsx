@@ -65,7 +65,7 @@ const Category = (props: any) => {
       <ScrollAnimationWrapper>
         <motion.div
           variants={scrollAnimation}
-          className="pt-[85px] pb-[45px] text-center container mx-auto"
+          className="pt-[85px] pb-[45px] text-center container mx-auto px-6"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
             {t("labour_exchange")}

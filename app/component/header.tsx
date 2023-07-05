@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Landing from "../../public/landing.png";
 import Community from "../../public/community.png";
+import ButtonOutline from "../misc/ButtonOutline";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -11,10 +12,19 @@ const Header = () => {
   return (
     <>
       <div className="container z-10 mx-auto mb-12">
-        <section className="lg:mt-60 mt-32 text-center">
+        <section className="lg:mt-60 mt-32 text-center flex flex-col">
           <h1 className="px-2 md:px-8 lg:px-20 text-charcoal-default font-semibold text-4xl md:text-5xl lg:text-6xl font-display h-[280px] md:h-[320px] lg:h-[350px]">
             {t("homepage_headline")}
           </h1>
+
+          <div className="lg:hidden flex mx-auto items-center w-full place-content-center mt-4">
+            <div className="flex mx-4 my-auto lg:ml-14">
+              <ButtonOutline>iOS APP</ButtonOutline>
+            </div>
+            <div className="flex">
+              <ButtonOutline>WebApp</ButtonOutline>
+            </div>
+          </div>
           <Image
             src={Landing}
             className="max-w-xl w-full h-auto text-center mx-auto my-14 px-4"

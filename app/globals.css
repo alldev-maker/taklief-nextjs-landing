@@ -17,5 +17,18 @@
 }
 
 html body {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
+}
+.slick-slide {
+  height: auto;
+}
+
+.slick-track {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.slick-list {
+  height: 210px;
 }
