@@ -6,7 +6,7 @@ import Landing from "../../public/landing.png";
 import Community from "../../public/community.png";
 import ButtonOutline from "../misc/ButtonOutline";
 
-const Header = () => {
+const Hero = () => {
   const { t } = useTranslation();
 
   return (
@@ -46,4 +46,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

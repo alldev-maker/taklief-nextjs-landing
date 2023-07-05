@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Header from "./component/header";
-import Category from "./component/category";
+import Hero from "./components/hero";
+import Category from "./components/category";
 import axios from "axios";
-import Card from "./component/card";
-import Footer from "./component/layout/footer";
+import Card from "./components/card";
 
 const serverUrl = "http://8.213.23.19/api";
 const getCategory = async () => {
@@ -28,7 +27,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <Hero />
       <Category category={category} />
       <Card />
     </>

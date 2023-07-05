@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import Head from "next/head";
 import { I18nextProvider } from "react-i18next";
-import Navbar from "./component/layout/navbar";
-import Footer from "./component/layout/footer";
+import Navbar from "./components/layout/navbar";
+import Footer from "./components/layout/footer";
 import i18n from "./i18n";
 
 import "slick-carousel/slick/slick.css";
