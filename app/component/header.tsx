@@ -1,44 +1,46 @@
 "use client";
-import React, { useMemo } from "react";
-import { motion, useTransform } from "framer-motion";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Landing from "../../public/landing.png";
 import Community from "../../public/community.png";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../utils/ScrollAnimationWrapper";
-import { useEffect } from "react";
-
-import { useTranslation } from "react-i18next";
+import ButtonOutline from "../misc/ButtonOutline";
 
 const Header = () => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const {t, i18n} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
       <div className="container z-10 mx-auto mb-12">
-        <section className="mt-60 px-52 text-center">
-          <h1 className="text-charcoal-default font-semibold text-6xl font-display">
-            {t("An integrated digital platform that brings together quality service providers and quality work seekers in various fields needed by the community")}
+        <section className="lg:mt-60 mt-32 text-center flex flex-col">
+          <h1 className="px-2 md:px-8 lg:px-20 text-charcoal-default font-semibold text-4xl md:text-5xl lg:text-6xl font-display h-[280px] md:h-[320px] lg:h-[350px]">
+            {t("homepage_headline")}
           </h1>
+
+          <div className="lg:hidden flex mx-auto items-center w-full place-content-center mt-4">
+            <div className="flex mx-4 my-auto lg:ml-14">
+              <ButtonOutline>iOS APP</ButtonOutline>
+            </div>
+            <div className="flex">
+              <ButtonOutline>WebApp</ButtonOutline>
+            </div>
+          </div>
           <Image
             src={Landing}
-            className="w-auto h-auto text-center mx-auto my-14"
+            className="max-w-xl w-full h-auto text-center mx-auto my-14 px-4"
             alt="No Img"
           />
-          <ScrollAnimationWrapper>
-            <motion.div variants={scrollAnimation}>
-              <p className="text-3xl text-charcoal-default font-display font-bold leading-extra-large">
-                {t("Made for the community")}
-              </p>
-              <Image
-                src={Community}
-                className="w-auto h-auto text-center mx-auto"
-                alt="No Img"
-              />
-            </motion.div>
-          </ScrollAnimationWrapper>
         </section>
+        <div>
+          <p className="max-w-6xl text-3xl text-center mx-auto text-charcoal-default font-display font-bold leading-extra-large">
+            {t("made_for_community")}
+          </p>
+          <Image
+            src={Community}
+            className="w-auto h-auto text-center mx-auto"
+            alt="No Img"
+          />
+        </div>
       </div>
     </>
   );

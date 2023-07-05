@@ -12,82 +12,54 @@ import { useTranslation } from "react-i18next";
 
 const Card = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
       <ScrollAnimationWrapper>
         <section className="container mx-auto text-center mb-[15px]">
-          <div className="flex flex-cols space-x-3.5 justify-center">
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px]
-              hover:border-primary hover:shadow-orange-700 transition-all 
-              "
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+          <div className="flex lg:flex-row flex-col space-y-3.5 lg:space-x-3.5 lg:space-y-0 px-4 justify-center mx-auto place-content-center items-center">
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={RightPerson}
-                className="w-auto h-auto mb-5"
+                className="w-[370px] h-auto lg:h-[370px] mb-5"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("What do you need done?")}
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+                {t("what_do_you_need")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("Start by telling us about your task. Mention when and where (in person or remotely) you need it done, then suggest a fair budget for the task. Post any task, literally!")}
+                {t("post_task_desc")}
               </p>
-            </motion.div>
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px]
-              hover:border-primary hover:shadow-orange-700 transition-all"
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+            </div>
+
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={TaskComplete}
-                className="w-auto h-auto mb-5 mx-auto"
+                className="w-[370px] h-auto lg:h-[370px] mb-5 mx-auto"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("Assign the best person for you")}
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+                {t("assgin_person")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("Take a look at profiles and reviews to pick the best Tasker for your task. when you accept an offer, your payment is held securely with Taklief Pay  until the task is complete. Now you can message and call the Tasker to sort out the details.")}
+                {t("take_look")}
               </p>
-            </motion.div>
-            <motion.div
-              className="border rounded px-[21px] py-[53px] text-center max-w-[371px] hover:border-primary hover:shadow-orange-700 transition-all"
-              variants={scrollAnimation}
-              whileHover={{
-                scale: 1.05,
-                transition: {
-                  duration: 0.1,
-                },
-              }}
-            >
+            </div>
+
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={Accomplish}
-                className="w-full h-auto mb-5"
+                className="w-[370px] h-auto lg:h-[370px] mb-5"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
-                {t("Task completed")}
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
+                {t("task_completed")}
               </h4>
               <p className="text-[17px] font-display font-normal">
-                {t("With your task complete, you just need to release the payment held with Taklief Pay. Then you’re free to leave a review for the Tasker so everyone can know what a great job they’ve done!.")}
+                {t("task_completion_message")}
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
       </ScrollAnimationWrapper>

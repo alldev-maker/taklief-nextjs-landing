@@ -1,16 +1,28 @@
 "use client";
-import React, { useMemo, useEffect } from "react";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../utils/ScrollAnimationWrapper";
-import Test1 from "../../public/test.png";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import ReviewItem from "./review-item";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../../utils/ScrollAnimationWrapper";
 
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 5000,
+  autoplaySpeed: 5000,
+  centerMode: true,
+  variableWidth: true,
+  cssEase: "linear",
+};
 const Category = (props: any) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const { category } = props;
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -18,11 +30,11 @@ const Category = (props: any) => {
         <motion.div variants={scrollAnimation}>
           <section className="container mx-auto text-center">
             <h4 className="text-general-default font-display font-bold text-xl my-5">
-              {t("Get it Done")}
+              {t("get_it_done")}
             </h4>
-            <div className="flex flex-row flex-wrap justify-center space-x-4">
+            {/* <div className="flex flex-row flex-wrap justify-center space-x-4">
               {category &&
-                category.map((item: any, index: number) => {
+                category?.map((item: any, index: number) => {
                   return (
                     <motion.div
                       className="space-y-3.5 text-center"
@@ -46,23 +58,40 @@ const Category = (props: any) => {
                     </motion.div>
                   );
                 })}
-            </div>
+            </div> */}
           </section>
         </motion.div>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper>
         <motion.div
           variants={scrollAnimation}
-          className="pt-[85px] pb-[45px] text-center"
+          className="pt-[85px] pb-[45px] text-center container mx-auto px-6"
         >
           <h4 className="text-general-default text-xl font-display font-bold">
-            {t("Reimagning how labout is exchanged in the real world")}
+            {t("labour_exchange")}
           </h4>
-          <p className="text-general-default text-[17px] font-display font-normal">
-            {t("Taklief is a Saudi platform based in Riyadh that provides mobile marketplace to enable users to outsource their daily tasks. Users describe the task and set its budget, then community members place their bids to attempt to complete the task.")}
+          <p className="text-general-default text-[17px] font-display font-normal max-w-6xl mx-auto">
+            {t("about_taklief")}
           </p>
         </motion.div>
       </ScrollAnimationWrapper>
+      <div className="w-full overflow-hidden mb-16">
+        <Slider {...settings}>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+        <div className="mt-3" />
+        <Slider {...settings} rtl>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+      </div>
     </>
   );
 };
