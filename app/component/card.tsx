@@ -18,14 +18,14 @@ const Card = () => {
     <>
       <ScrollAnimationWrapper>
         <section className="container mx-auto text-center mb-[15px]">
-          <div className="flex lg:flex-row flex-col space-y-3.5 lg:space-x-3.5 lg:space-y-0 px-4 justify-center mx-auto place-content-center items-center h-[627px]">
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
+          <div className="flex lg:flex-row flex-col space-y-3.5 lg:space-x-3.5 lg:space-y-0 px-4 justify-center mx-auto place-content-center items-center">
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={RightPerson}
-                className="w-[370px] h-auto mb-5"
+                className="w-[370px] h-auto lg:h-[370px] mb-5"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
                 {t("what_do_you_need")}
               </h4>
               <p className="text-[17px] font-display font-normal">
@@ -33,13 +33,13 @@ const Card = () => {
               </p>
             </div>
 
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={TaskComplete}
-                className="w-[370px] h-auto mb-5 mx-auto"
+                className="w-[370px] h-auto lg:h-[370px] mb-5 mx-auto"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
                 {t("assgin_person")}
               </h4>
               <p className="text-[17px] font-display font-normal">
@@ -47,13 +47,13 @@ const Card = () => {
               </p>
             </div>
 
-            <div className="border rounded px-[21px] text-center max-w-[371px] w-full h-full flex flex-col">
+            <div className="border rounded px-[21px] text-center max-w-[371px] w-full flex flex-col h-auto lg:h-[627px] pb-10">
               <Image
                 src={Accomplish}
-                className="w-full h-auto mb-5"
+                className="w-[370px] h-auto lg:h-[370px] mb-5"
                 alt="no Img"
               />
-              <h4 className="text-general-default text-xl font-display font-bold mb-[57px]">
+              <h4 className="text-general-default text-xl font-display font-bold mb-6 lg:mb-[30px]">
                 {t("task_completed")}
               </h4>
               <p className="text-[17px] font-display font-normal">
