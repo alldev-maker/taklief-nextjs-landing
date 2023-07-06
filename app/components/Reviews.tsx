@@ -2,10 +2,10 @@ import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
-import { default as ClockIcon } from "../../../assets/clock.svg";
-import { default as CalendarIcon } from "../../../assets/calendar.svg";
-import { default as LocationIcon } from "../../../assets/location.svg";
-import { default as WingIcon } from "../../../assets/wing.svg";
+import { default as ClockIcon } from "../../assets/clock.svg";
+import { default as CalendarIcon } from "../../assets/calendar.svg";
+import { default as LocationIcon } from "../../assets/location.svg";
+import { default as WingIcon } from "../../assets/wing.svg";
 
 const ReviewItem = () => {
   return (
@@ -61,11 +61,11 @@ const Reviews = () => {
 
   return (
     <section>
-      <div className="container mx-auto px-6 pb-[45px] pt-[85px] text-center">
-        <h4 className="font-sfpro text-xl font-bold text-general-default">
+      <div className="container mx-auto mb-12 mt-[85px] text-center">
+        <h2 className="mb-3 font-sfpro text-xl font-bold text-general-default">
           {t("labour_exchange")}
-        </h4>
-        <p className="mx-auto max-w-6xl font-sfpro text-[17px] font-normal text-general-default">
+        </h2>
+        <p className="mx-auto max-w-[1258px] font-sfpro text-[17px] font-normal text-general-default">
           {t("about_taklief")}
         </p>
       </div>

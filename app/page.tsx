@@ -4,6 +4,7 @@ import axios from "axios";
 import Hero from "./components/Hero";
 import Category from "./components/Category";
 import CardBox from "./components/CardBox";
+import Reviews from "./components/Reviews";
 
 const serverUrl = "http://8.213.23.19/api";
 const getCategory = async () => {
@@ -29,6 +30,7 @@ export default function Home() {
     <>
       <Hero />
       <Category category={category} />
+      <Reviews />
       <CardBox />
     </>
   );

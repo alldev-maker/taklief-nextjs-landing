@@ -44,7 +44,7 @@ export default function RootLayoutProvider({
 }) {
   return (
     <I18nextProvider i18n={i18n}>
-      <html className={`${SFProText.variable} font-sans`}>
+      <html className={`${SFProText.variable} font-sfpro`}>
         <body>
           <main>
             <Navbar />

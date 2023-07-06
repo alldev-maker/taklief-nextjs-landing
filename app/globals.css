@@ -16,9 +16,6 @@
   @apply left-0 w-full;
 }
 
-html body {
-  font-family: "SF Pro Display", sans-serif;
-}
 .slick-slide {
   height: auto;
 }
