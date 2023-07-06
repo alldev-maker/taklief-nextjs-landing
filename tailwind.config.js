@@ -23,7 +23,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        display: "SF Pro Display",
+        sfpro: ["var(--font-sfprotext)"],
       },
       colors: {
         primary: {
@@ -39,6 +39,10 @@ module.exports = {
       },
       lineHeight: {
         "extra-large": "72px",
+      },
+      container: {
+        center: true,
+        padding: "20px",
       },
     },
   },

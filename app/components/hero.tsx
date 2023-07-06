@@ -10,39 +10,37 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <div className="container z-10 mx-auto mb-12">
-        <section className="mt-32 flex flex-col text-center lg:mt-60">
-          <h1 className="h-[280px] px-2 font-display text-4xl font-semibold text-charcoal-default md:h-[320px] md:px-8 md:text-5xl lg:h-[350px] lg:px-20 lg:text-6xl">
-            {t("homepage_headline")}
-          </h1>
+    <section className="container z-10 mt-[90px]">
+      <div className="flex flex-col text-center">
+        <h1 className="mx-auto mt-[30px] max-w-[1495px] font-sfpro text-4xl font-semibold tracking-wide text-charcoal-default md:text-5xl lg:mt-[145px] lg:text-6xl lg:leading-[72px]">
+          {t("homepage_headline")}
+        </h1>
 
-          <div className="mx-auto mt-4 flex w-full place-content-center items-center lg:hidden">
-            <div className="mx-4 my-auto flex lg:ml-14">
-              <ButtonOutline>iOS APP</ButtonOutline>
-            </div>
-            <div className="flex">
-              <ButtonOutline>WebApp</ButtonOutline>
-            </div>
+        <div className="mx-auto mt-4 flex w-full place-content-center items-center lg:hidden">
+          <div className="mx-4 my-auto flex lg:ml-14">
+            <ButtonOutline>iOS APP</ButtonOutline>
           </div>
-          <Image
-            src={Landing}
-            className="mx-auto my-14 h-auto w-full max-w-xl px-4 text-center"
-            alt="No Img"
-          />
-        </section>
-        <div>
-          <p className="mx-auto max-w-6xl text-center font-display text-3xl font-bold leading-extra-large text-charcoal-default">
-            {t("made_for_community")}
-          </p>
-          <Image
-            src={Community}
-            className="mx-auto h-auto w-auto text-center"
-            alt="No Img"
-          />
+          <div className="flex">
+            <ButtonOutline>WebApp</ButtonOutline>
+          </div>
         </div>
+        <Image
+          src={Landing}
+          className="mx-auto my-14 h-auto max-h-[931px] w-full max-w-[931px] text-center"
+          alt="No Img"
+        />
       </div>
-    </>
+      <div>
+        <p className="mx-auto max-w-6xl text-center font-sfpro text-3xl font-bold leading-extra-large text-charcoal-default">
+          {t("made_for_community")}
+        </p>
+        <Image
+          src={Community}
+          className="mx-auto h-auto w-auto text-center"
+          alt="No Img"
+        />
+      </div>
+    </section>
   );
 };
 

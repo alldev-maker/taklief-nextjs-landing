@@ -1,5 +1,5 @@
 @tailwind base;
-@tailwind componentss;
+@tailwind components;
 @tailwind utilities;
 
 .animation-hover:after {
