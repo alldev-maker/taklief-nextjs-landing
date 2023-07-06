@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
 import i18n, { switchLan } from "../../i18n";
-import ButtonOutline from "../../misc/ButtonOutline";
+import ButtonOutline from "../shared/ButtonOutline";
 import navIcon from "../../../public/navIcon.png";
 import arabicFl from "../../../public/arabic.png";
 import englandFl from "../../../public/england.png";

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Landing from "../../public/landing.png";
 import Community from "../../public/community.png";
-import ButtonOutline from "../misc/ButtonOutline";
+import ButtonOutline from "./shared/ButtonOutline";
 
 const Hero = () => {
   const { t } = useTranslation();
