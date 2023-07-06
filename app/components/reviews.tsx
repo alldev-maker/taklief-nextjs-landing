@@ -1,4 +1,7 @@
+import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
+
 import { default as ClockIcon } from "../../../assets/clock.svg";
 import { default as CalendarIcon } from "../../../assets/calendar.svg";
 import { default as LocationIcon } from "../../../assets/location.svg";
@@ -41,4 +44,50 @@ const ReviewItem = () => {
   );
 };
 
-export default ReviewItem;
+const Reviews = () => {
+  const { t } = useTranslation();
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
+    centerMode: true,
+    variableWidth: true,
+    cssEase: "linear",
+  };
+
+  return (
+    <section>
+      <div className="container mx-auto px-6 pb-[45px] pt-[85px] text-center">
+        <h4 className="font-display text-xl font-bold text-general-default">
+          {t("labour_exchange")}
+        </h4>
+        <p className="mx-auto max-w-6xl font-display text-[17px] font-normal text-general-default">
+          {t("about_taklief")}
+        </p>
+      </div>
+      <div className="mb-16 w-full overflow-hidden">
+        <Slider {...settings}>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+        <div className="mt-3" />
+        <Slider {...settings} rtl>
+          {Array(10)
+            .fill(0)
+            .map((val, index) => (
+              <ReviewItem key={index} />
+            ))}
+        </Slider>
+      </div>
+    </section>
+  );
+};
+
+export default Reviews;

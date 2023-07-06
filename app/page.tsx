@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import axios from "axios";
 import Hero from "./components/hero";
 import Category from "./components/category";
-import axios from "axios";
 import Card from "./components/card";
 
 const serverUrl = "http://8.213.23.19/api";
