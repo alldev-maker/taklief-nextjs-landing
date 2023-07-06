@@ -17,7 +17,7 @@ const navList = [
   "community_guideline",
 ];
 
-const Navbar = () => {
+const Header = () => {
   const { t } = useTranslation();
   const [activeLink, setActiveLink] = useState(navList[0]);
   const [scrollActive, setScrollActive] = useState(false);
@@ -38,21 +38,23 @@ const Navbar = () => {
     <header>
       <nav
         className={
-          "fixed top-0 z-30 w-full bg-white" +
-          (scrollActive ? " py-5 shadow-md" : " py-5")
+          "fixed top-0 z-30 w-full bg-white py-4 lg:py-5" +
+          (scrollActive ? " shadow-md" : "")
         }
       >
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-4 lg:px-8">
-          <div className="mr-auto flex h-[50px] w-[50px] items-center">
-            <Image src={navIcon} className="h-[50px] w-[50px]" alt={"Logo"} />
-          </div>
+        <div className="mx-auto flex max-w-7xl  flex-wrap items-center justify-between px-4">
+          <Image
+            src={navIcon}
+            className="mr-auto h-[30px] w-[30px] lg:h-[50px] lg:w-[50px]"
+            alt={"Logo"}
+          />
 
           <ul className="text-black-500 hidden items-center lg:flex">
             {navList.map((navItem: string) => (
               <li
                 key={navItem}
                 className={
-                  "relative flex h-full cursor-pointer items-center px-4 text-[17px] text-base" +
+                  "relative flex h-full cursor-pointer items-center px-3 text-[17px] text-base" +
                   (activeLink === navItem
                     ? " animation-active font-bold "
                     : " text-black-500 ")
@@ -63,7 +65,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="flex items-center justify-end font-medium sm:ml-4 lg:ml-14">
+          <div className="flex items-center justify-end font-medium sm:ml-4 lg:ml-8">
             <div className="flex cursor-pointer" onClick={switchLan}>
               <p className="mr-2 hidden text-base font-bold lg:block">
                 {i18n.language === "en" ? "عربي" : "en"}
@@ -74,7 +76,7 @@ const Navbar = () => {
                 alt={"Language"}
               />
             </div>
-            <div className="mx-4 my-auto hidden lg:ml-14 lg:flex">
+            <div className="mx-4 my-auto hidden lg:ml-8 lg:flex">
               <ButtonOutline>iOS APP</ButtonOutline>
             </div>
             <div className="hidden lg:block">
@@ -117,4 +119,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

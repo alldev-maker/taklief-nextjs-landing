@@ -56,10 +56,10 @@ const Reviews = () => {
   return (
     <section>
       <div className="container mx-auto mb-12 mt-[85px] text-center">
-        <h2 className="mb-3 font-sfpro text-xl font-bold text-general-default">
+        <h2 className="mb-3 font-sfpro text-xl font-bold leading-6 text-general-default">
           {t("labour_exchange")}
         </h2>
-        <p className="mx-auto max-w-[1258px] font-sfpro text-[17px] font-normal text-general-default">
+        <p className="mx-auto max-w-[1258px] font-sfpro text-[17px] font-normal leading-[25.5px] text-general-default">
           {t("about_taklief")}
         </p>
       </div>

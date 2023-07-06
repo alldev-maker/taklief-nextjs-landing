@@ -3,7 +3,7 @@ import React from "react";
 import { I18nextProvider } from "react-i18next";
 import localFont from "next/font/local";
 
-import Navbar from "./components/layout/Navbar";
+import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import i18n from "./i18n";
 
@@ -47,7 +47,7 @@ export default function RootLayoutProvider({
       <html className={`${SFProText.variable} font-sfpro`}>
         <body>
           <main>
-            <Navbar />
+            <Header />
             {children}
             <Footer />
           </main>
