@@ -11,31 +11,25 @@ const ReviewItem = () => {
   return (
     <div className="border-1 mx-2 flex w-[390px] flex-col gap-y-[10px] rounded border border-slate-300 p-5">
       <div className="flex w-full place-content-between">
-        <span className="text-base font-medium">Waiting Review</span>
-        <span className="text-base font-bold">SR 35</span>
+        <span className="text-[17px] font-medium leading-[25.5px]">
+          Waiting Review
+        </span>
+        <span className="text-[17px] font-bold leading-[25.5px]">SR 35</span>
       </div>
-      <div className="flex items-center gap-1">
-        <Image
-          src={LocationIcon}
-          className="h-4 w-4 text-slate-200"
-          alt="location"
-        />
-        <span className="text-sm">Remote</span>
+      <div className="flex items-center gap-[5px]">
+        <Image src={LocationIcon} className="h-4 w-4" alt="location" />
+        <span className="text-[13px]">Remote</span>
       </div>
-      <div className="flex items-center gap-1">
-        <Image
-          src={CalendarIcon}
-          alt="calendar"
-          className="h-4 w-4 text-slate-200"
-        />
-        <span className="text-sm">22/10/2022</span>
+      <div className="flex items-center gap-[5px]">
+        <Image src={CalendarIcon} alt="calendar" className="h-4 w-4" />
+        <span className="text-[13px]">22/10/2022</span>
       </div>
-      <div className="flex items-center gap-1">
-        <Image src={ClockIcon} alt="clock" className="h-4 w-4 text-slate-200" />
-        <span className="text-sm">22/10/2022 03:21:08 PM</span>
+      <div className="flex items-center gap-[5px]">
+        <Image src={ClockIcon} alt="clock" className="h-4 w-4" />
+        <span className="text-[13px]">22/10/2022 03:21:08 PM</span>
       </div>
-      <div className="flex place-content-between">
-        <span className="rounded-3xl bg-[#F5F7FA] px-5 py-[6px] text-sm font-bold text-[#7db343]">
+      <div className="flex items-center justify-between">
+        <span className="rounded-3xl bg-[#F5F7FA] px-5 py-2 text-[13px] font-bold text-[#7db343]">
           OPEN
         </span>
         <Image src={WingIcon} alt="wing" className="h-10 w-10" />
@@ -69,7 +63,7 @@ const Reviews = () => {
           {t("about_taklief")}
         </p>
       </div>
-      <div className="mb-16 w-full overflow-hidden">
+      <div className="mb-[76px] w-full overflow-hidden">
         <Slider {...settings}>
           {Array(10)
             .fill(0)
