@@ -47,6 +47,7 @@ export default function RootLayoutProvider({
       <title>Taklief | Home Page</title>
 
       <body suppressHydrationWarning={true}>
+        <link rel="icon" href="/favicon.png" sizes="any" />
         <main>
           <I18nextProvider i18n={i18n}>
             <Header />
