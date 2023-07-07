@@ -13,19 +13,18 @@ const Category = (props: any) => {
         {t("get_it_done")}
       </h2>
       <div className="flex flex-row flex-wrap justify-center space-x-[18px]">
-        {category &&
-          category?.map((item: any, index: number) => {
-            return (
-              <div className="space-y-[13px] text-center" key={index}>
-                <Image
-                  src={TempImg}
-                  className="mx-auto h-[100px] w-[100px]"
-                  alt={`${item.image} not find`}
-                />
-                <p className="text-xs text-[#292B32]">{item.title}</p>
-              </div>
-            );
-          })}
+        {category?.map((item: any, index: number) => {
+          return (
+            <div className="space-y-[13px] text-center" key={index}>
+              <Image
+                src={TempImg}
+                className="mx-auto h-[100px] w-[100px]"
+                alt={`${item.image} not find`}
+              />
+              <p className="text-xs text-[#292B32]">{item.title}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

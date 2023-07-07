@@ -10,6 +10,7 @@ const serverUrl = process.env.NEXT_PUBLIC_API_URL;
 const getCategory = async () => {
   try {
     const response = await axios.get(`${serverUrl}/get-all-category`);
+    console.log(response.data.data);
     return response.data.data.category;
   } catch (error) {
     return error;
@@ -41,8 +42,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Category category={category} />
-      <Reviews tasks={tasks} />
+      {category.length > 0 && <Category category={category} />}
+      {tasks.length > 0 && <Reviews tasks={tasks} />}
       <CardBox />
     </>
   );

@@ -43,16 +43,21 @@ export default function RootLayoutProvider({
   children: React.ReactNode;
 }) {
   return (
-    <I18nextProvider i18n={i18n}>
-      <html className={`${SFProText.variable} font-sfpro`}>
-        <body>
-          <main>
+    <html className={`${SFProText.variable} font-sfpro`}>
+      <title>Taklief | Home Page</title>
+      {/* <meta
+        httpEquiv="Content-Security-Policy"
+        content="upgrade-insecure-requests"
+      /> */}
+      <body suppressHydrationWarning={true}>
+        <main>
+          <I18nextProvider i18n={i18n}>
             <Header />
             {children}
             <Footer />
-          </main>
-        </body>
-      </html>
-    </I18nextProvider>
+          </I18nextProvider>
+        </main>
+      </body>
+    </html>
   );
 }

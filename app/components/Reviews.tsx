@@ -71,7 +71,7 @@ const Reviews = (props: any) => {
       </div>
       <div className="mb-[76px] w-full overflow-hidden">
         <Slider {...settings}>
-          {tasks.map((val: Object, index: Number) => (
+          {tasks?.map((val: Object, index: Number) => (
             <ReviewItem task={val} key={index} />
           ))}
         </Slider>
