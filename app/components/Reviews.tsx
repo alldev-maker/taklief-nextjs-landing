@@ -77,11 +77,9 @@ const Reviews = (props: any) => {
         </Slider>
         <div className="mt-3" />
         <Slider {...settings} rtl>
-          {Array(10)
-            .fill(0)
-            .map((val, index) => (
-              <ReviewItem key={index} />
-            ))}
+          {tasks?.map((val: Object, index: Number) => (
+            <ReviewItem task={val} key={index} />
+          ))}
         </Slider>
       </div>
     </section>
