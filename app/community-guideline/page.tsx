@@ -1,6 +1,6 @@
 export default function CommunityGuideline() {
   return (
-    <section id="community-guideline">
+    <section className="about">
       <div className="container">
         <h3>Are there any task posting guidelines?</h3>
 

@@ -1,6 +1,6 @@
 export default function ReleasePayment() {
   return (
-    <section id="release-payment">
+    <section className="about">
       <div className="container">
         <h3>The customer hasn't released payment yet, what do I do?</h3>
         <p>

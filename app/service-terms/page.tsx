@@ -1,6 +1,6 @@
 export default function ServiceTerms() {
   return (
-    <section id="service-terms">
+    <section className="about">
       <div className="container">
         <h2>
           <strong>Terms and Conditions</strong>

@@ -1,6 +1,6 @@
 export default function TaskerPrinciple() {
   return (
-    <section id="tasker-principle">
+    <section className="about">
       <div className="container">
         <h3>Principles of a Professional Service Provider (Tasker)</h3>
 

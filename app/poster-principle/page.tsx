@@ -1,6 +1,6 @@
 export default function PosterPrinciple() {
   return (
-    <section id="poster-principle">
+    <section className="about">
       <div className="container">
         <h3>Service Requester Principles (Poster)</h3>
 

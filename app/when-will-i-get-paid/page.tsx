@@ -1,6 +1,6 @@
 export default function WhenWillGetPaid() {
   return (
-    <section id="when-will-i-get-paid">
+    <section className="about">
       <div className="container">
         <h3>When will I get paid ?</h3>
         <p>

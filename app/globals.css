@@ -16,6 +16,10 @@
   @apply left-0 w-full;
 }
 
+.about {
+  @apply mb-10 mt-32;
+}
+
 .slick-slide {
   height: auto;
 }
