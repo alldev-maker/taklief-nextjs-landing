@@ -45,10 +45,7 @@ export default function RootLayoutProvider({
   return (
     <html className={`${SFProText.variable} font-sfpro`}>
       <title>Taklief | Home Page</title>
-      <meta
-        httpEquiv="Content-Security-Policy"
-        content="upgrade-insecure-requests"
-      />
+
       <body suppressHydrationWarning={true}>
         <main>
           <I18nextProvider i18n={i18n}>
