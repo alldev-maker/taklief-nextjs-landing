@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="container z-10 mt-[90px]">
       <div className="flex flex-col text-center">
-        <h1 className="mx-auto mt-[30px] max-w-[1495px] font-sfpro text-4xl font-semibold tracking-wide text-charcoal-default md:text-5xl lg:mt-[145px] lg:text-6xl lg:leading-[72px]">
+        <h1 className="mx-auto mt-[30px] max-w-[1495px] font-sfpro text-4xl font-semibold text-charcoal-default md:text-5xl lg:mt-[145px] lg:text-6xl lg:leading-[72px]">
           {t("homepage_headline")}
         </h1>
 
