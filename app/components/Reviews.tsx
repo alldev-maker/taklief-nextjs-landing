@@ -7,14 +7,18 @@ import { default as CalendarIcon } from "../../assets/calendar.svg";
 import { default as LocationIcon } from "../../assets/location.svg";
 import { default as WingIcon } from "../../assets/wing.svg";
 
-const ReviewItem = () => {
+const ReviewItem = (props: any) => {
+  const { task } = props;
+
   return (
     <div className="border-1 mx-2 flex w-[390px] flex-col gap-y-[10px] rounded border border-slate-300 p-5">
       <div className="flex w-full place-content-between">
         <span className="text-[17px] font-medium leading-[25.5px]">
-          Waiting Review
+          {task.title}
         </span>
-        <span className="text-[17px] font-bold leading-[25.5px]">SR 35</span>
+        <span className="text-[17px] font-bold leading-[25.5px]">
+          SR {task.task_total_budget}
+        </span>
       </div>
       <div className="flex items-center gap-[5px]">
         <Image src={LocationIcon} className="h-4 w-4" alt="location" />
@@ -22,7 +26,7 @@ const ReviewItem = () => {
       </div>
       <div className="flex items-center gap-[5px]">
         <Image src={CalendarIcon} alt="calendar" className="h-4 w-4" />
-        <span className="text-[13px]">22/10/2022</span>
+        <span className="text-[13px]">{task.task_complete_date}</span>
       </div>
       <div className="flex items-center gap-[5px]">
         <Image src={ClockIcon} alt="clock" className="h-4 w-4" />
@@ -38,7 +42,9 @@ const ReviewItem = () => {
   );
 };
 
-const Reviews = () => {
+const Reviews = (props: any) => {
+  const { tasks } = props;
+
   const { t } = useTranslation();
   const settings = {
     dots: true,
@@ -65,11 +71,9 @@ const Reviews = () => {
       </div>
       <div className="mb-[76px] w-full overflow-hidden">
         <Slider {...settings}>
-          {Array(10)
-            .fill(0)
-            .map((val, index) => (
-              <ReviewItem key={index} />
-            ))}
+          {tasks.map((val: Object, index: Number) => (
+            <ReviewItem task={val} key={index} />
+          ))}
         </Slider>
         <div className="mt-3" />
         <Slider {...settings} rtl>
