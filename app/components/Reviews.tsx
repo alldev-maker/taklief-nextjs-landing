@@ -17,7 +17,7 @@ const ReviewItem = (props: any) => {
           {task.title}
         </span>
         <span className="text-[17px] font-bold leading-[25.5px]">
-          SR {task.task_total_budget}
+          SR {task?.task_total_budget}
         </span>
       </div>
       <div className="flex items-center gap-[5px]">
@@ -26,7 +26,7 @@ const ReviewItem = (props: any) => {
       </div>
       <div className="flex items-center gap-[5px]">
         <Image src={CalendarIcon} alt="calendar" className="h-4 w-4" />
-        <span className="text-[13px]">{task.task_complete_date}</span>
+        <span className="text-[13px]">{task?.task_complete_date}</span>
       </div>
       <div className="flex items-center gap-[5px]">
         <Image src={ClockIcon} alt="clock" className="h-4 w-4" />
