@@ -14,7 +14,7 @@ const ReviewItem = (props: any) => {
     <div className="border-1 mx-2 flex w-[390px] flex-col gap-y-[10px] rounded border border-slate-300 p-5">
       <div className="flex w-full place-content-between">
         <span className="text-[17px] font-medium leading-[25.5px]">
-          {task.title}
+          {task?.title}
         </span>
         <span className="text-[17px] font-bold leading-[25.5px]">
           SR {task?.task_total_budget}
