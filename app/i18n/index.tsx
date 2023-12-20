@@ -31,3 +31,8 @@ export const switchLan = () => {
   if (i18n.language === "en") return i18n.changeLanguage("ar");
   i18n.changeLanguage("en");
 };
+export const chooseLan = (lang: string) => {
+  if (lang === "en") return i18n.changeLanguage("en");
+  else if (lang === "عربي") return i18n.changeLanguage("ar");
+  i18n.changeLanguage("en");
+};
