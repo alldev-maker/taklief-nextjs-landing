@@ -3,15 +3,16 @@ import { chooseLan } from "../i18n";
 import Image from "next/image";
 
 const languages = [
-  { name: "English", lang: "en" },
+  { name: "English", lang: "EN" },
   { name: "Arabic", lang: "عربي" },
-  { name: "Hindi", lang: "hi" },
-  { name: "Urdu", lang: "ur" },
+  { name: "Hindi", lang: "HI" },
+  { name: "Urdu", lang: "UR" },
 ];
 
 const LanguageDropdownMenu = ({ lang }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef: any = useRef(null);
+  const [selectedLang, setSelectedLang] = useState("EN");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -44,7 +45,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
         aria-haspopup="true"
       >
         <Image src="/earth-line 1.svg" alt="earth" width={20} height={20} />
-        {lang !== "en" ? "عربي" : "EN"}
+        {selectedLang}
         <svg
           className="-mr-1 h-5 w-5 text-gray-400"
           viewBox="0 0 20 20"
@@ -69,6 +70,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
                 className="text-left font-sfpro text-[15px] font-normal text-sky-400"
                 onClick={() => {
                   chooseLan(language.lang);
+                  setSelectedLang(language.lang);
                   toggleMenu();
                 }}
               >
