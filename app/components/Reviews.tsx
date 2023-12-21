@@ -1,46 +1,7 @@
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-import { default as ClockIcon } from "../../assets/clock.svg";
-import { default as CalendarIcon } from "../../assets/calendar.svg";
-import { default as LocationIcon } from "../../assets/location.svg";
-import { default as WingIcon } from "../../assets/wing.svg";
-
-const ReviewItem = (props: any) => {
-  const { task } = props;
-
-  return (
-    <div className="border-1 mx-2 flex w-[390px] flex-col gap-y-[10px] rounded border border-slate-300 p-5">
-      <div className="flex w-full place-content-between">
-        <span className="text-[17px] font-medium leading-[25.5px]">
-          {task?.title}
-        </span>
-        <span className="text-[17px] font-bold leading-[25.5px]">
-          SR {task?.task_total_budget}
-        </span>
-      </div>
-      <div className="flex items-center gap-[5px]">
-        <Image src={LocationIcon} className="h-4 w-4" alt="location" />
-        <span className="text-[13px]">Remote</span>
-      </div>
-      <div className="flex items-center gap-[5px]">
-        <Image src={CalendarIcon} alt="calendar" className="h-4 w-4" />
-        <span className="text-[13px]">{task?.task_complete_date}</span>
-      </div>
-      <div className="flex items-center gap-[5px]">
-        <Image src={ClockIcon} alt="clock" className="h-4 w-4" />
-        <span className="text-[13px]">22/10/2022 03:21:08 PM</span>
-      </div>
-      <div className="flex items-center justify-between">
-        <span className="rounded-3xl bg-[#F5F7FA] px-5 py-2 text-[13px] font-bold text-[#7db343]">
-          OPEN
-        </span>
-        <Image src={WingIcon} alt="wing" className="h-10 w-10" />
-      </div>
-    </div>
-  );
-};
+import ReviewItem from "./ReviewItem";
 
 const Reviews = (props: any) => {
   const { tasks } = props;
@@ -62,12 +23,12 @@ const Reviews = (props: any) => {
   return (
     <section>
       <div className="container mx-auto mb-12 mt-[85px] text-center">
-        <h2 className="mb-3 font-sfpro text-xl font-bold leading-6 text-general-default">
-          {t("labour_exchange")}
+        <h2 className="mb-3 font-sfpro text-[15px]  font-extrabold leading-6 text-black">
+          {t("browse_tasks")}
         </h2>
-        <p className="mx-auto max-w-[1258px] font-sfpro text-[17px] font-normal leading-[25.5px] text-general-default">
+        {/* <p className="mx-auto max-w-[1258px] font-sfpro text-[17px] font-normal leading-[25.5px] text-general-default">
           {t("about_taklief")}
-        </p>
+        </p> */}
       </div>
       <div className="mb-[76px] w-full overflow-hidden">
         <Slider {...settings}>

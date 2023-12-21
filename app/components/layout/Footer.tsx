@@ -5,9 +5,10 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-[#F5F7FA] py-[30px]">
-      <div className="container">
-        <div className="flex flex-col justify-between md:flex-row md:items-end">
+    <footer className=" py-[30px]">
+      <div className="flex w-full justify-center text-[15px] text-sky-400">
+        <Link href="#">{t("terms_of_service")}</Link>
+        {/* <div className="flex flex-col justify-between md:flex-row md:items-end">
           <nav className="pt-lg-0 flex flex-col space-y-[10px]">
             <Link
               href="/when-will-i-get-paid"
@@ -31,7 +32,7 @@ const Footer = () => {
           <p className="mt-10 text-right text-[13px] font-medium text-charcoal-default md:mt-0 md:text-left md:text-[15px]">
             {t("copyright")}
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

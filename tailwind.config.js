@@ -43,6 +43,12 @@ module.exports = {
       container: {
         center: true,
         padding: "20px",
+        background: "red",
+      },
+      textContainer: {
+        center: true,
+        padding: "20px",
+        background: "red",
       },
     },
   },
