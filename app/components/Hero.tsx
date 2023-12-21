@@ -49,7 +49,7 @@ const Hero = () => {
           />
           <div className="flex justify-center space-x-[5px] pb-20">
             <span className="flex font-sfpro text-[15px] font-normal text-black">
-              For
+              {t("for")}
               <p className="ml-1 font-semibold">Iphone</p>
             </span>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
@@ -59,7 +59,9 @@ const Hero = () => {
               height={24}
               alt="No Img"
             />
-            <p className="font-sfpro font-[15px] text-sky-400">IOS App</p>
+            <p className="font-sfpro font-[15px] text-sky-400">
+              {t("ios_app")}
+            </p>
           </div>
         </div>
         <div className="flex flex-col justify-center space-y-[10px]">
@@ -72,7 +74,7 @@ const Hero = () => {
           />
           <div className="flex justify-center space-x-[5px] pb-20">
             <span className="flex font-sfpro text-[15px] font-normal text-black">
-              For
+              {t("for")}
               <p className="ml-1 font-semibold">Android</p>
             </span>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
@@ -82,7 +84,9 @@ const Hero = () => {
               height={24}
               alt="No Img"
             />
-            <p className="font-sfpro font-[15px] text-sky-400">Coming soon</p>
+            <p className="font-sfpro font-[15px] text-sky-400">
+              {t("coming_soon")}
+            </p>
           </div>
         </div>
       </div>
@@ -96,7 +100,7 @@ const Hero = () => {
         />
         <div className="flex justify-center space-x-[5px] pb-20">
           <span className="flex font-sfpro text-[15px] font-normal text-black">
-            For
+            {t("for")}
             <p className="ml-1 font-semibold">Web</p>
           </span>
           <div className="w-[2px] bg-slate-300 py-[1px]"></div>
@@ -106,7 +110,9 @@ const Hero = () => {
             height={24}
             alt="No Img"
           />
-          <p className="font-sfpro font-[15px] text-sky-400">Coming soon</p>
+          <p className="font-sfpro font-[15px] text-sky-400">
+            {t("coming_soon")}
+          </p>
         </div>
       </div>
     </section>

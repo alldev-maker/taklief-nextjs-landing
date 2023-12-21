@@ -27,7 +27,7 @@ const Category = (props: any) => {
               </div>
 
               <p className="mx-auto flex max-w-[61px] items-center justify-center text-center font-sfpro text-[15px] text-black">
-                {item.name}
+                {t(item.name)}
               </p>
             </div>
           );

@@ -5,6 +5,9 @@
   "get_things_done": "Get things done",
   "labour_exchange": "Reimagning how labout is exchanged in the real world",
   "browse_tasks": "Browse Tasks",
+  "for": "For",
+  "ios_app": "iOS App",
+  "coming_soon": "Coming soon",
   "about_taklief": "Taklief is a Saudi platform based in Riyadh that provides mobile marketplace to enable users to outsource their daily tasks. Users describe the task and set its budget, then community members place their bids to attempt to complete the task.",
   "what_do_you_need": "What do you need done?",
   "post_task_desc": "Start by telling us about your task. Mention when and where (in person or remotely) you need it done, then suggest a fair budget for the task. Post any task, literally!",
@@ -23,5 +26,92 @@
   "client_hasnt_released": "Client hasn't released payment yet!",
   "terms_of_service": "Terms of Service",
   "copyright": "©2023 All Rights Reserved to Taklief LLC",
-  "get_app_to_view_link": "Get the app to view this link"
+  "get_app_to_view_link": "Get the app to view this link",
+  "for_iphone": "For iPhone",
+  "for_android": "For Android",
+  "for_web": "For Web",
+  "not_found": "Page could not be Found",
+  "task_guidelines": {
+    "section_a": {
+      "title": "A. Tasks must be legal",
+      "content": "To ensure a safe and secure experience for all our members, all tasks posted must be legal. Soliciting, inducing, or encouraging illegal acts are strictly prohibited. Scams are also not tolerated on Taklief and will be removed."
+    },
+    "section_b": {
+      "title": "B. Prohibited items list",
+      "content": "Tasks must not relate to weapons or unlawful activity, which may result in furtherance of a crime. Any requests relating to drugs, including prescription drugs or drug paraphernalia, are prohibited. Not only may these activities have serious legal ramifications, but they are also against the spirit and values of Taklief."
+    },
+    "section_c": {
+      "title": "C. No escort or adult services",
+      "content": "Escort, adult services, and massage tasks are strictly prohibited on Taklief. This includes tasks or comments which are obscene or sexually explicit in nature. While we are pushing boundaries and helping to reimagine the future of employment, we draw the line here."
+    },
+    "section_d": {
+      "title": "D. Clear scope, time, and budget required",
+      "content": "To help get your tasks completed, it’s important that your task has a clear scope, time, and budget.\n\n- **Scope:** The task description should clearly and thoroughly state what it is that you need done. Adding as much information as possible helps the Tasker understand expectations.\n- **Time:** Does the task need to be completed on a specific day, or can it be flexible with the Tasker? If specific, mention in task description.\n- **Budget:** Setting a fair price for the amount of time and effort required for the task is crucial. Taklief does not endorse low pricing of tasks, and a task may be moderated if found to be.\n\nThese help Taskers to know whether they have the skills and availability to complete your task. It will also help avoid any misunderstandings about expectations along the way.",
+      "highlighted": "To help get your tasks completed, it’s important that your task has a clear scope, time and budget.",
+      "scope": {
+        "title": "Scope:",
+        "content": "The task description should clearly, and thoroughly, state what it is that you need done. Adding as much information as possible helps the Tasker understand expectations."
+      },
+      "time": {
+        "title": "Time:",
+        "content": "Does the task need to be completed on a specific day or can it be flexible with the Tasker? If specific, mention in task description."
+      },
+      "budget": {
+        "title": "Budget:",
+        "content": "Setting a fair price for the amount of time and effort required for the task is crucial. Taklief does not endorse low pricing of tasks and a task may be moderated, if found to be."
+      },
+      "help_taskers": "These help Taskers to know whether they have the skills and availability to complete your task. It will also help avoid any misunderstandings about expectations along the way."
+    },
+    "section_e": {
+      "title": "E. Task-based posts",
+      "content": "The Taklief platform is a task-based platform that encourages you to outsource all the weird and quirky things you might need done on any given day. However, there are a few types of tasks that are not supported to maintain the integrity of the platform. Tasks that are deceitful in nature are not allowed. This includes but is not limited to requesting fake business reviews, social media likes, and follows.",
+      "example_1": {
+        "title": "Example 1:",
+        "content": "Sarah's task, requesting Taskers to leave 5-star reviews on her company's website and Google Maps, was promptly canceled by Taklief. She was informed that her task did not comply with the Community Guidelines. Academic activities and assignment-based tasks, such as completing assignments, tests, or courses on someone's behalf, are strictly prohibited. Additionally, academic assistance in the form of proofreading, editing, planning, structuring, referencing, and providing feedback on someone else's academic work is also not supported."
+      },
+      "example_2": {
+        "title": "Example 2:",
+        "content": "Ahmed posted a task seeking a Tasker to proofread his assignment, a 1,000-word essay on the French Revolution. Shortly after posting, Ahmed was contacted and informed that the task had been canceled since proofreading tasks are not supported on Taklief. Additionally, tasks requesting quotes for work to be done outside of Taklief are not allowed."
+      },
+      "example_3": {
+        "title": "Example 3:",
+        "content": "Saud posted a task with a minimum price, requesting a Tasker to come to his home and provide a quote for painting his 3-bedroom house. The task was canceled by Taklief because it sought a quote and not an actual painting service. Tasks that involve nudity, toplessness, or clothing such as lingerie, swimwear, and gym wear are not supported."
+      },
+      "example_4": {
+        "title": "Example 4:",
+        "content": "Joanne posted a task seeking a Tasker to model for a bikini photoshoot. The task was canceled since the Tasker would be required to wear a bikini. Tasks that involve investigating or gathering information on an individual or business without their knowledge and consent are not supported. Debt collection tasks are also not supported. Tasks that request someone to withdraw cash, buy gift cards, vouchers for the Poster, or send money to the Poster via methods like direct bank transfers or STCPay are not supported."
+      }
+    },
+    "section_f": {
+      "title": "F. No advertising",
+      "content": "We support businesses outsourcing tasks on Taklief to help their business grow, however Taklief is not a platform for business advertisements, nor a job board for permanent job ads. Taklief is also not a platform for any requests to be employed.",
+      "example_1": {
+        "title": "Example 1:",
+        "content": "Faris posted a task asking for a part-time or full-time job as a builder. The task was removed by Taklief as job requests are not supported in the Taklief platform"
+      },
+      "example_2": {
+        "title": "Example 2:",
+        "content": "Amanda owns a driving school and posted a task looking for full-time driving instructors, with an hourly rate. Amanda’s task was removed as it was considered a business advertisement therefore not supported in the Taklief platform."
+      }
+    }
+  },
+  "community_guidelines": "Community guidelines",
+  "are_there_any_task_posting_guidelines": "Are there any task posting guidelines?",
+  "community_guideline_1": "The Taklief platform helps you get more done. To create a safe, respectful and rewarding environment, we need you to follow the Guidelines below.",
+  "Moving furniture": "Moving furniture",
+  "Gardening": "Gardening",
+  "Handyman": "Handyman",
+  "Cleaning": "Cleaning",
+  "Business & Admin": "Business & Admin",
+  "Delivery": "Delivery",
+  "Pedicure & manicure": "Pedicure & manicure",
+  "Manpower": "Manpower",
+  "Health": "Health",
+  "Art": "Art",
+  "Construction": "Construction",
+  "Lab & Research": "Lab & Research",
+  "Mechanic": "Mechanic",
+  "Pets care": "Pets care",
+  "Baby care": "Baby care",
+  "Web & design": "Web & design"
 }
