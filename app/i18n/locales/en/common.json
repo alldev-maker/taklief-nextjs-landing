@@ -4,6 +4,7 @@
   "get_it_done": "Get it Done",
   "get_things_done": "Get things done",
   "labour_exchange": "Reimagning how labout is exchanged in the real world",
+  "browse_tasks": "Browse Tasks",
   "about_taklief": "Taklief is a Saudi platform based in Riyadh that provides mobile marketplace to enable users to outsource their daily tasks. Users describe the task and set its budget, then community members place their bids to attempt to complete the task.",
   "what_do_you_need": "What do you need done?",
   "post_task_desc": "Start by telling us about your task. Mention when and where (in person or remotely) you need it done, then suggest a fair budget for the task. Post any task, literally!",
@@ -21,5 +22,6 @@
   "when_get_paid": "When will I get paid ?",
   "client_hasnt_released": "Client hasn't released payment yet!",
   "terms_of_service": "Terms of Service",
-  "copyright": "©2023 All Rights Reserved to Taklief LLC"
+  "copyright": "©2023 All Rights Reserved to Taklief LLC",
+  "get_app_to_view_link": "Get the app to view this link"
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 const DropdownMenu = ({ text }: any) => {
@@ -53,21 +54,36 @@ const DropdownMenu = ({ text }: any) => {
       {isOpen && (
         <div className="absolute left-0 z-10 mt-2 min-w-[308px]  origin-top-right rounded-[10px] bg-white p-5 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className=" flex flex-col items-start space-y-2 text-left">
-            <button className=" font-sfpro text-[15px] font-bold text-sky-400">
+            <Link
+              href="/tasker-principle"
+              className=" font-sfpro text-[15px] font-bold text-sky-400"
+            >
               Tasker Principles
-            </button>
-            <button className=" font-sfpro text-[15px] font-bold text-sky-400">
+            </Link>
+            <Link
+              href="/poster-principle"
+              className=" font-sfpro text-[15px] font-bold text-sky-400"
+            >
               Poster Principles
-            </button>
-            <button className=" font-sfpro text-[15px] font-bold text-sky-400">
+            </Link>
+            <Link
+              href="/community-guideline"
+              className=" font-sfpro text-[15px] font-bold text-sky-400"
+            >
               Community Guidelines
-            </button>
-            <button className=" font-sfpro text-[15px] font-bold text-sky-400">
+            </Link>
+            <Link
+              href="/when-will-i-get-paid"
+              className=" font-sfpro text-[15px] font-bold text-sky-400"
+            >
               When will I get paid ?
-            </button>
-            <button className=" font-sfpro text-[15px] font-bold text-sky-400">
+            </Link>
+            <Link
+              href="/release-payment"
+              className=" font-sfpro text-[15px] font-bold text-sky-400"
+            >
               Client hasn't released payment yet!
-            </button>
+            </Link>
             {/* <form method="POST" action="#">
               <button
                 type="submit"

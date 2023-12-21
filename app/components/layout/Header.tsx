@@ -11,6 +11,7 @@ import hambergerIcon from "../../../assets/hamberger.svg";
 import closeIcon from "../../../assets/close.svg";
 import DropdownMenu from "../DropdownMenu";
 import LanguageDropdownMenu from "../LanguageDropDownMenu";
+import Link from "next/link";
 
 const navList = [
   "home",
@@ -65,7 +66,8 @@ const Header = () => {
                 {t(navItem)}
               </li>
             ))} */}
-            <li
+            <Link
+              href="/"
               className={
                 "relative flex h-full cursor-pointer items-center px-3 text-[17px] text-base" +
                 (activeLink === "home"
@@ -74,7 +76,7 @@ const Header = () => {
               }
             >
               {t("home")}
-            </li>
+            </Link>
             <li
               className={
                 "relative flex h-full cursor-pointer items-center px-3 text-[17px] text-base" +

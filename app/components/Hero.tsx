@@ -10,18 +10,18 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="container z-10 mt-[90px]">
+    <section className="container z-10 mt-20">
       <div className="flex flex-col text-center">
         {/* <h1 className=" bg-gradient-to-r from-blue-400 via-blue-500 to-green-500 text-center text-[25px] font-black">
           {t("get_things_done")}
         </h1> */}
-        <Image
+        {/* <Image
           src="/HeadingBadge.svg"
           className="mx-auto mb-20 mt-9 h-auto w-auto text-center"
           alt="No Img"
           width={240}
           height={30}
-        />
+        /> */}
 
         {/* <div className="mx-auto mt-4 flex w-full place-content-center items-center lg:hidden">
           <div className="mx-4 my-auto flex lg:ml-14">
