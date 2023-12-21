@@ -2,6 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import en from "./locales/en/common.json";
 import ar from "./locales/ar/common.json";
+import ur from "./locales/ur/common.json";
+import hi from "./locales/hi/common.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -15,6 +17,12 @@ i18n
       },
       ar: {
         translation: ar,
+      },
+      hi: {
+        translation: hi,
+      },
+      ur: {
+        translation: ur,
       },
     },
     lng: "en", // if you're using a language detector, do not define the lng option
@@ -34,5 +42,7 @@ export const switchLan = () => {
 export const chooseLan = (lang: string) => {
   if (lang === "en") return i18n.changeLanguage("en");
   else if (lang === "عربي") return i18n.changeLanguage("ar");
+  else if (lang === "hi") return i18n.changeLanguage("hi");
+  else if (lang === "ur") return i18n.changeLanguage("ur");
   i18n.changeLanguage("en");
 };

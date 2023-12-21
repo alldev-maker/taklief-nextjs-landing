@@ -5,13 +5,13 @@ import Image from "next/image";
 const languages = [
   { name: "English", lang: "en" },
   { name: "Arabic", lang: "عربي" },
-  { name: "Hindi", lang: "en" },
-  { name: "Urdu", lang: "عربي" },
+  { name: "Hindi", lang: "hi" },
+  { name: "Urdu", lang: "ur" },
 ];
 
 const LanguageDropdownMenu = ({ lang }: any) => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef: any = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

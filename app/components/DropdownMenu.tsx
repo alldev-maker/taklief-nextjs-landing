@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const DropdownMenu = ({ text }: any) => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef: any = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -55,6 +55,9 @@ const DropdownMenu = ({ text }: any) => {
         <div className="absolute left-0 z-10 mt-2 min-w-[308px]  origin-top-right rounded-[10px] bg-white p-5 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className=" flex flex-col items-start space-y-2 text-left">
             <Link
+              onClick={() => {
+                toggleMenu();
+              }}
               href="/tasker-principle"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
