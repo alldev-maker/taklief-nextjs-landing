@@ -1,21 +1,20 @@
 "use client";
 import React from "react";
 import Hero from "../components/Hero";
-import ReviewItem from "../components/ReviewItem";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-const task = {
-  taskTitle: "Yard Cleanup",
-  taskLocation: "Al-Olaya, Riyadh",
-  taskBudget: 650,
-  taskDate: "20 November 2023",
-  taskCompletionDate: "Evening",
-  taskStatus: "Open",
-  taskUser: {
-    userImage: "/Ellipse 42.svg",
-  },
-};
+// const task = {
+//   taskTitle: "Yard Cleanup",
+//   taskLocation: "Al-Olaya, Riyadh",
+//   taskBudget: 650,
+//   taskDate: "20 November 2023",
+//   taskCompletionDate: "Evening",
+//   taskStatus: "Open",
+//   taskUser: {
+//     userImage: "/Ellipse 42.svg",
+//   },
+// };
 
 const Profile = () => {
   const { t } = useTranslation();

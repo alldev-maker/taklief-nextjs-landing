@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const DropdownMenu = ({ text }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef: any = useRef(null);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -61,31 +63,31 @@ const DropdownMenu = ({ text }: any) => {
               href="/tasker-principle"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
-              Tasker Principles
+              {t("tasker_principles")}
             </Link>
             <Link
               href="/poster-principle"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
-              Poster Principles
+              {t("poster_principles")}
             </Link>
             <Link
               href="/community-guideline"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
-              Community Guidelines
+              {t("community_guidelines")}
             </Link>
             <Link
               href="/when-will-i-get-paid"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
-              When will I get paid ?
+              {t("when_will_i_get_paid")}
             </Link>
             <Link
               href="/release-payment"
               className=" font-sfpro text-[15px] font-bold text-sky-400"
             >
-              Client hasn't released payment yet!
+              {t("client_hasnt_released")}
             </Link>
             {/* <form method="POST" action="#">
               <button

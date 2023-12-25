@@ -40,9 +40,9 @@ export const switchLan = () => {
   i18n.changeLanguage("en");
 };
 export const chooseLan = (lang: string) => {
-  if (lang === "en") return i18n.changeLanguage("en");
+  if (lang === "EN") return i18n.changeLanguage("en");
   else if (lang === "عربي") return i18n.changeLanguage("ar");
-  else if (lang === "hi") return i18n.changeLanguage("hi");
-  else if (lang === "ur") return i18n.changeLanguage("ur");
+  else if (lang === "HI") return i18n.changeLanguage("hi");
+  else if (lang === "UR") return i18n.changeLanguage("ur");
   i18n.changeLanguage("en");
 };
