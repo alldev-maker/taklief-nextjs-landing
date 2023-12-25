@@ -1,5 +1,5 @@
 import React from "react";
-import CommunityHeroImage from "../../public/WorldCommunity.svg";
+import CommunityHeroImage from "../../public/WorldCommunity.png";
 import Image from "next/image";
 
 const CommunityHero = () => {
