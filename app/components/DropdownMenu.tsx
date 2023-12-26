@@ -1,5 +1,4 @@
-import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const DropdownMenu = ({ text }: any) => {
@@ -33,7 +32,7 @@ const DropdownMenu = ({ text }: any) => {
       <button
         type="button"
         onClick={toggleMenu}
-        className="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-sfpro text-[15px] text-sm font-bold  text-black ring-gray-300 ring-transparent hover:text-sky-400 focus:text-sky-400"
+        className="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white py-2 font-sfpro text-[15px] text-sm font-bold  text-black ring-gray-300 ring-transparent hover:text-sky-400 focus:text-sky-400"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
@@ -54,41 +53,38 @@ const DropdownMenu = ({ text }: any) => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute left-0 z-10 mt-2 min-w-[308px]  origin-top-right rounded-[10px] bg-white p-5 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className=" flex flex-col items-start space-y-2 text-left">
-            <Link
-              onClick={() => {
-                toggleMenu();
-              }}
+        <div className="absolute -left-5 z-10 mt-2 min-w-[300px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white p-2.5 md:min-w-[320px] md:p-5">
+          <div className="flex flex-col items-start gap-2.5 text-left">
+            <a
               href="/tasker-principle"
-              className=" font-sfpro text-[15px] font-bold text-sky-400"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
             >
               {t("tasker_principles")}
-            </Link>
-            <Link
+            </a>
+            <a
               href="/poster-principle"
-              className=" font-sfpro text-[15px] font-bold text-sky-400"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
             >
               {t("poster_principles")}
-            </Link>
-            <Link
+            </a>
+            <a
               href="/community-guideline"
-              className=" font-sfpro text-[15px] font-bold text-sky-400"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
             >
               {t("community_guidelines")}
-            </Link>
-            <Link
+            </a>
+            <a
               href="/when-will-i-get-paid"
-              className=" font-sfpro text-[15px] font-bold text-sky-400"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
             >
               {t("when_will_i_get_paid")}
-            </Link>
-            <Link
+            </a>
+            <a
               href="/release-payment"
-              className=" font-sfpro text-[15px] font-bold text-sky-400"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
             >
               {t("client_hasnt_released")}
-            </Link>
+            </a>
             {/* <form method="POST" action="#">
               <button
                 type="submit"

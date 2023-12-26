@@ -40,7 +40,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
       <button
         type="button"
         onClick={toggleMenu}
-        className="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-sfpro text-[15px] text-sm font-bold  text-black ring-gray-300 ring-transparent hover:text-sky-400 focus:text-sky-400"
+        className="inline-flex items-center justify-center gap-x-1.5 rounded-[10px] bg-white px-3 py-2 font-sfpro text-[15px] text-sm font-bold text-black ring-gray-300 ring-transparent hover:text-sky-400 focus:text-sky-400"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
@@ -62,12 +62,14 @@ const LanguageDropdownMenu = ({ lang }: any) => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 min-w-[308px]  origin-top-right rounded-[10px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className=" grid h-full w-full grid-cols-2 items-start px-5 py-[10px] text-left">
+        <div className="absolute right-4 z-10 mt-2 min-w-[170px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white sm:min-w-[308px]">
+          <div className="grid h-full w-full grid-cols-2 items-start gap-5 px-5 py-2.5 text-left">
             {languages.map((language, index) => (
               <button
                 key={index}
-                className="text-left font-sfpro text-[15px] font-normal text-sky-400"
+                className={`text-left font-sfpro text-[15px] font-normal ${
+                  selectedLang === language.lang ? "text-black" : "text-sky-400"
+                }`}
                 onClick={() => {
                   chooseLan(language.lang);
                   setSelectedLang(language.lang);
