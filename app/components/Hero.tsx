@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       <div className="mx-auto flex w-full flex-col items-center justify-center space-x-20 lg:flex-row">
-        <div className="flex flex-col justify-center space-y-[10px]">
+        <div className="flex flex-col justify-center gap-10">
           <Image
             src="/IphoneMockup.svg"
             className="mx-auto mb-[10px] mt-9 h-auto w-auto text-center"
@@ -50,7 +50,7 @@ const Hero = () => {
           <div className="flex justify-center space-x-[5px] pb-20">
             <span className="flex font-sfpro text-[15px] font-normal text-black">
               {t("for")}
-              <p className="ml-1 font-semibold">Iphone</p>
+              <p className="ml-1 font-semibold">iPhone</p>
             </span>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
             <Image
@@ -64,7 +64,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center space-y-[10px]">
+        <div className="flex flex-col justify-center gap-10">
           <Image
             src="/AndroidMockup.svg"
             className="mx-auto mb-[10px] mt-9 h-auto w-auto text-center"

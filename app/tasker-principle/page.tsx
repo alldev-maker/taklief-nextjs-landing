@@ -1,7 +1,10 @@
+import Breadcrumb from "../components/shared/Breadcrumb";
+
 export default function TaskerPrinciple() {
   return (
     <section className="about">
-      <div className="container">
+      <div className="container flex flex-col gap-5">
+        <Breadcrumb pageName="tasker_principle" />
         <h3>Principles of a Professional Service Provider (Tasker)</h3>
 
         <p>

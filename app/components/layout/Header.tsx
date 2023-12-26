@@ -42,10 +42,10 @@ const Header = () => {
       <nav
         className={
           "fixed top-0 z-30 w-full bg-white py-4 lg:py-5" +
-          (scrollActive ? " shadow-md" : "")
+          (scrollActive ? " shadow-md" : " border-b border-[#F5F7FA]")
         }
       >
-        <div className="mx-auto flex max-w-7xl  flex-wrap items-center justify-between px-4">
+        <div className="container flex flex-wrap items-center justify-between px-4">
           {/* <Image
             src={navIcon}
             className="mr-auto h-[30px] w-[30px] lg:h-[50px] lg:w-[50px]"
@@ -69,7 +69,7 @@ const Header = () => {
             <Link
               href="/"
               className={
-                "relative flex h-full cursor-pointer items-center px-3 text-[17px] text-base" +
+                "relative flex h-full cursor-pointer items-center text-[17px] text-base" +
                 (activeLink === "home"
                   ? " font-bold text-sky-400 "
                   : " text-black-500 ")
@@ -79,7 +79,7 @@ const Header = () => {
             </Link>
             <li
               className={
-                "relative flex h-full cursor-pointer items-center px-3 text-[17px] text-base" +
+                "relative ml-[15px] flex h-full cursor-pointer items-center text-[17px] text-base" +
                 (activeLink === "home"
                   ? " font-bold text-sky-400 "
                   : " text-black-500 ")

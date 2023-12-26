@@ -1,7 +1,10 @@
+import Breadcrumb from "../components/shared/Breadcrumb";
+
 export default function PosterPrinciple() {
   return (
     <section className="about">
-      <div className="container">
+      <div className="container flex flex-col gap-5">
+        <Breadcrumb pageName="poster_principles" />
         <h3>Service Requester Principles (Poster)</h3>
 
         <p>
