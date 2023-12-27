@@ -7,10 +7,12 @@ import { default as LocationIcon } from "../../assets/location.svg";
 import { default as WingIcon } from "../../assets/wing.svg";
 
 const ReviewItem = (props: any) => {
-  const { task } = props;
+  const { task, bgColor = "bg-slate-100" } = props;
 
   return (
-    <div className="border-1 mx-2 flex w-[390px] flex-col gap-y-[10px] rounded-[10px] border border-slate-300 bg-slate-100 p-5">
+    <div
+      className={`border-1 mx-2 flex w-[350px] flex-col gap-y-[10px] rounded-[10px] border border-slate-300 p-5 ${bgColor}`}
+    >
       <div className="flex w-full place-content-between">
         <span className="text-[15px] font-medium leading-[25.5px]">
           {task?.taskTitle}
