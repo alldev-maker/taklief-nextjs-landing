@@ -35,7 +35,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="relative flex text-left" ref={dropdownRef}>
       <button
         type="button"
         onClick={toggleMenu}

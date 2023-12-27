@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="header fixed top-0 z-30 w-full border-b border-[#C5CDD9] bg-white py-3">
+      <nav className="header fixed top-0 z-30 w-full border-b border-[#C5CDD9] bg-white py-2.5">
         <div className="container flex flex-wrap items-center justify-between px-4">
           <ul className="text-black-500 flex items-center ">
             <Link
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="flex items-center justify-end font-medium sm:ml-4 lg:ml-8">
+          <div className="flex items-center justify-end">
             <LanguageDropdownMenu
               lang={i18n.language}
               // chooseLanguage={switchLan}
