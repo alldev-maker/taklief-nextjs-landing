@@ -278,7 +278,11 @@ export default function Home() {
   return (
     <>
       <h1 className="mt-20 flex items-center justify-center gap-[5px] text-[25px] font-black">
-        <img src="hero-icon.svg" alt="title-icon" />
+        <img
+          className="h-6 w-6 rounded-full shadow-title-logo"
+          src="/title-logo.svg"
+          alt="title-icon"
+        />
         Get things done
       </h1>
       <Hero />
