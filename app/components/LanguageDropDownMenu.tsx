@@ -74,7 +74,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute right-2 top-7 z-10 min-w-[170px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white">
+        <div className="absolute right-2 top-11 z-10 min-w-[170px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white">
           <div className="grid h-full w-full grid-cols-2 items-start gap-5 px-5 py-2.5 text-left">
             {languages.map((language, index) => (
               <button
