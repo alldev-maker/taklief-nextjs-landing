@@ -47,7 +47,7 @@ const Hero = () => {
             </span>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
             <Image
-              src="/BlueWindowfilledIcon.svg"
+              src="/BlueAndroidIcon.svg"
               width={24}
               height={24}
               alt="No Img"

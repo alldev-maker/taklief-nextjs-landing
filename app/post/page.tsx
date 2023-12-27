@@ -20,7 +20,7 @@ const task = {
 const Post = () => {
   const { t } = useTranslation();
   return (
-    <div className="mt-24 flex h-full w-full flex-col justify-center ">
+    <div className="mt-20 flex h-full w-full flex-col justify-center ">
       <div className="flex w-full flex-col items-center justify-center space-y-[10px] align-middle">
         <ReviewItem className="mx-auto" task={task} bgColor="bg-white" />
         <div className="inline-flex h-11 w-[353px] items-center justify-start space-x-5 rounded-[10px] bg-slate-50 px-5 py-2.5">

@@ -39,7 +39,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
       <button
         type="button"
         onClick={toggleMenu}
-        className={`inline-flex items-center justify-center gap-x-1.5 rounded-[10px] bg-white px-3 py-2 font-sfpro text-base font-semibold ring-gray-300 ring-transparent ${
+        className={`inline-flex items-center justify-center gap-x-1.5 rounded-[10px] bg-white px-3 font-sfpro text-base font-semibold ring-gray-300 ring-transparent ${
           isOpen ? "text-sky-400" : "text-black"
         }`}
         aria-expanded={isOpen}
