@@ -277,10 +277,13 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="home-heading mt-24">
-        <img src="title-icon.svg" alt="title-icon" />
+      <div className="mt-24 flex items-center justify-center gap-[5px]">
+        <img src="hero-icon.svg" alt="title-icon" />
+        <img src="hero-title.svg" alt="title-icon" />
+      </div>
+      {/* <h1 className="home-heading mt-24">
         Get things done
-      </h1>
+      </h1> */}
       <Hero />
       {category.length > 0 && <Category category={category} />}
       {tasks.length > 0 && <Reviews tasks={tasks} />}
