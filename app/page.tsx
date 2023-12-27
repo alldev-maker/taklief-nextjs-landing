@@ -113,17 +113,6 @@ const getTasks = async () => {
       },
     },
     {
-      taskTitle: "Record Furniture Assembly Tutorial",
-      taskLocation: "789 Elm Street, Home Studio, Townsville",
-      taskBudget: 200,
-      taskDate: "2023-02-01",
-      taskCompletionDate: "2023-02-02",
-      taskStatus: "Assigned",
-      taskUser: {
-        userImage: "/Ellipse 41.svg",
-      },
-    },
-    {
       taskTitle: "Trimming and Pruning",
       taskLocation: "101 Pine Avenue, Backyard, Villageland",
       taskBudget: 400,
@@ -288,13 +277,10 @@ export default function Home() {
 
   return (
     <>
-      <Image
-        src="/HeadingBadge.svg"
-        className="mx-auto  mt-[90px] h-auto w-auto text-center"
-        alt="No Img"
-        width={240}
-        height={30}
-      />
+      <h1 className="home-heading mt-24">
+        <img src="title-icon.svg" alt="title-icon" />
+        Get things done
+      </h1>
       <Hero />
       {category.length > 0 && <Category category={category} />}
       {tasks.length > 0 && <Reviews tasks={tasks} />}

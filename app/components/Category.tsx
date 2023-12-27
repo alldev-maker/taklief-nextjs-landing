@@ -8,7 +8,7 @@ const Category = (props: any) => {
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto mb-20 text-center">
+    <section className="container mx-auto my-20 text-center">
       <h2 className="mb-10 text-center font-sfpro text-[15px] font-extrabold text-black">
         {t("get_it_done")}
       </h2>

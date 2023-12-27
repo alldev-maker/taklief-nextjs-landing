@@ -19,7 +19,7 @@ import { useTranslation } from "react-i18next";
 const Profile = () => {
   const { t } = useTranslation();
   return (
-    <div className="mt-[130px] flex h-full w-full flex-col justify-center ">
+    <div className="mt-24 flex h-full w-full flex-col justify-center ">
       <div className="flex w-full flex-col items-center justify-center space-y-[10px] align-middle">
         <div className="relative h-auto w-[350px] flex-col items-center justify-center space-y-5 overflow-hidden rounded-[10px] border border-slate-300 bg-white">
           {/* Background image div */}
