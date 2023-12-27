@@ -32,7 +32,7 @@ const DropdownMenu = ({ text, isActive }: any) => {
       <button
         type="button"
         onClick={toggleMenu}
-        className={`inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white py-2 font-sfpro text-base font-bold ring-gray-300 ring-transparent ${
+        className={`inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white font-sfpro text-base font-bold ring-gray-300 ring-transparent ${
           isOpen || isActive ? "text-sky-400" : "text-black"
         }`}
         aria-expanded={isOpen}
