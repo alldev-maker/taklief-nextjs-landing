@@ -39,7 +39,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
       <button
         type="button"
         onClick={toggleMenu}
-        className={`inline-flex items-center justify-center gap-x-1.5 rounded-[10px] bg-white px-3 py-2 font-sfpro text-[15px] text-sm font-bold ring-gray-300 ring-transparent ${
+        className={`inline-flex items-center justify-center gap-x-1.5 rounded-[10px] bg-white px-3 py-2 font-sfpro text-base font-semibold ring-gray-300 ring-transparent ${
           isOpen ? "text-sky-400" : "text-black"
         }`}
         aria-expanded={isOpen}
@@ -74,7 +74,7 @@ const LanguageDropdownMenu = ({ lang }: any) => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute right-4 z-10 mt-2 min-w-[170px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white sm:min-w-[308px]">
+        <div className="absolute right-4 z-10 mt-2 min-w-[170px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white">
           <div className="grid h-full w-full grid-cols-2 items-start gap-5 px-5 py-2.5 text-left">
             {languages.map((language, index) => (
               <button

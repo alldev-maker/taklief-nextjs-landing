@@ -33,11 +33,3 @@
 .slick-list {
   height: 210px;
 }
-
-.home-heading {
-  @apply flex items-center justify-center gap-[5px] font-sfpro text-[25px] font-black;
-  background: linear-gradient(97deg, #42ade2 39.67%, #6eb925 69.87%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

@@ -27,29 +27,20 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="fixed top-0 z-30 w-full border-b border-[#C5CDD9] bg-white py-4 lg:py-5">
+      <nav className="fixed top-0 z-30 w-full border-b border-[#C5CDD9] bg-white py-3">
         <div className="container flex flex-wrap items-center justify-between px-4">
           <ul className="text-black-500 flex items-center ">
             <Link
               href="/"
               className={
-                "relative flex h-full cursor-pointer items-center text-[17px] text-base" +
-                (pathname === "/"
-                  ? " font-bold text-sky-400 "
-                  : " text-black-500 ")
+                "relative flex h-full cursor-pointer items-center text-[17px] text-base font-bold" +
+                (pathname === "/" ? " text-sky-400 " : " text-black-500 ")
               }
             >
               {t("home")}
             </Link>
-            <li
-              className={
-                "relative ml-[15px] flex h-full cursor-pointer items-center text-[17px] text-base" +
-                (pathname === "/"
-                  ? " font-bold text-sky-400 "
-                  : " text-black-500 ")
-              }
-            >
-              <DropdownMenu text={t("more")} />
+            <li className="relative ml-[15px] flex h-full cursor-pointer items-center text-[17px] text-base">
+              <DropdownMenu text={t("more")} isActive={pathname !== "/"} />
             </li>
           </ul>
 

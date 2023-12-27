@@ -18,7 +18,7 @@ const Card = () => {
             alt="no Img"
           />
           <div className="px-5 lg:text-left">
-            <h4 className="mb-5 font-sfpro text-xl font-bold text-black">
+            <h4 className="mb-5 text-center font-sfpro text-xl font-bold text-black">
               {t("what_do_you_need")}
             </h4>
             <p className="font-sfpro text-[17px] font-normal">
@@ -34,7 +34,7 @@ const Card = () => {
             alt="no Img"
           />
           <div className="px-5 lg:text-left">
-            <h4 className="mb-6 font-sfpro text-xl font-bold text-general-default lg:mb-[30px]">
+            <h4 className="mb-6 text-center font-sfpro text-xl font-bold text-black lg:mb-[30px]">
               {t("assgin_person")}
             </h4>
             <p className="font-sfpro text-[17px] font-normal">
@@ -49,7 +49,7 @@ const Card = () => {
             alt="no Img"
           />
           <div className="px-5 lg:text-left">
-            <h4 className="mb-6 font-sfpro text-xl font-bold text-general-default lg:mb-[30px]">
+            <h4 className="mb-6 text-center font-sfpro text-xl font-bold text-black lg:mb-[30px]">
               {t("task_completed")}
             </h4>
             <p className="font-sfpro text-[17px] font-normal">
