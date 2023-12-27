@@ -1,9 +1,9 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import IphoneMockup from "../../public/IphoneMockup.svg";
-import AndroidMockup from "../../public/AndroidMockup.svg";
-import DevicesMockup from "../../public/DevicesMockup.svg";
+import IphoneMockup from "../../public/hero1.png";
+import AndroidMockup from "../../public/hero2.png";
+import DevicesMockup from "../../public/hero3.png";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center gap-5">
           <Image
             src={IphoneMockup}
-            className="mx-auto h-auto w-auto text-center"
+            className="mx-auto h-auto w-auto max-w-[345px] text-center"
             alt="No Img"
           />
           <div className="flex justify-center space-x-[5px]">
@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center gap-5">
           <Image
             src={AndroidMockup}
-            className="mx-auto h-auto w-auto text-center"
+            className="mx-auto h-auto w-auto max-w-[340px] text-center"
             alt="No Img"
           />
           <div className="flex justify-center space-x-[5px]">
@@ -61,7 +61,7 @@ const Hero = () => {
       <div className="mx-auto flex w-full flex-col items-center justify-center">
         <Image
           src={DevicesMockup}
-          className="mx-auto mb-5 h-auto w-auto text-center"
+          className="mx-auto mb-5 h-auto w-auto max-w-[850px] text-center"
           alt="No Img"
           width={846}
           height={325}
