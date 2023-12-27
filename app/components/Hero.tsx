@@ -61,7 +61,7 @@ const Hero = () => {
       <div className="mx-auto flex w-full flex-col items-center justify-center">
         <Image
           src={DevicesMockup}
-          className="mx-auto mb-5 h-auto w-auto max-w-[850px] text-center"
+          className="mx-auto mb-5 w-full max-w-[850px] text-center"
           alt="No Img"
           width={846}
           height={325}
