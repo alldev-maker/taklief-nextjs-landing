@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center gap-5">
           <Image
             src={IphoneMockup}
-            className="mx-auto h-auto w-auto max-w-[345px] text-center"
+            className="mx-auto h-auto w-auto max-w-[180px] text-center md:max-w-[345px]"
             alt="No Img"
           />
           <div className="flex justify-center space-x-[5px]">
@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center gap-5">
           <Image
             src={AndroidMockup}
-            className="mx-auto h-auto w-auto max-w-[340px] text-center"
+            className="mx-auto h-auto w-auto max-w-[180px] text-center md:max-w-[340px]"
             alt="No Img"
           />
           <div className="flex justify-center space-x-[5px]">
