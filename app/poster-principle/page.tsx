@@ -1,3 +1,4 @@
+import CommunityHero from "../components/CommunityHero";
 import Breadcrumb from "../components/shared/Breadcrumb";
 
 export default function PosterPrinciple() {
@@ -65,6 +66,7 @@ export default function PosterPrinciple() {
           it.&nbsp;&nbsp;
         </p>
       </div>
+      <CommunityHero />
     </section>
   );
 }

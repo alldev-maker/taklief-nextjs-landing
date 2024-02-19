@@ -1,13 +1,12 @@
 "use client";
 import { useTranslation } from "react-i18next";
-import TempImg from "../../public/test.png";
 
 const Category = (props: any) => {
   const { category } = props;
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto my-20 text-center">
+    <section className="container mx-auto py-10 text-center">
       <h2 className="mb-10 text-center font-sfpro text-[15px] font-extrabold text-black">
         {t("get_it_done")}
       </h2>
@@ -17,7 +16,7 @@ const Category = (props: any) => {
             <div className="text-center" key={index}>
               <div className="inline-flex h-[100px] w-[100px] flex-col items-center justify-center rounded-full border border-slate-300 bg-slate-100 text-center">
                 <img
-                  src={item.image ? `${item.image}` : TempImg}
+                  src={item.image ? `${item.image}` : "/test.png"}
                   className="mx-auto w-full"
                   alt={`${item.image} not find`}
                 />

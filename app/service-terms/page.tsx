@@ -1,3 +1,5 @@
+import CommunityHero from "../components/CommunityHero";
+
 export default function ServiceTerms() {
   return (
     <section className="about">
@@ -1948,6 +1950,7 @@ export default function ServiceTerms() {
           <li>&nbsp;</li>
         </ul>
       </div>
+      <CommunityHero />
     </section>
   );
 }

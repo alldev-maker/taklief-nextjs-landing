@@ -1,3 +1,4 @@
+import CommunityHero from "../components/CommunityHero";
 import Breadcrumb from "../components/shared/Breadcrumb";
 
 export default function TaskerPrinciple() {
@@ -80,6 +81,7 @@ export default function TaskerPrinciple() {
           quality of work.
         </p>
       </div>
+      <CommunityHero />
     </section>
   );
 }

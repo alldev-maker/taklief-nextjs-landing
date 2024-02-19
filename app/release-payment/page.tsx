@@ -1,3 +1,4 @@
+import CommunityHero from "../components/CommunityHero";
 import Breadcrumb from "../components/shared/Breadcrumb";
 
 export default function ReleasePayment() {
@@ -76,6 +77,7 @@ export default function ReleasePayment() {
           </li>
         </ol>
       </div>
+      <CommunityHero />
     </section>
   );
 }

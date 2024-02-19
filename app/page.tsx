@@ -1,11 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Hero from "./components/Hero";
+import Overview from "./components/Overview";
 import Category from "./components/Category";
 import CardBox from "./components/CardBox";
 import Reviews from "./components/Reviews";
 import CommunityHero from "./components/CommunityHero";
+import Hero from "./components/Hero";
 
 const serverUrl = process.env.NEXT_PUBLIC_API_URL;
 const getCategory = async () => {
@@ -41,7 +42,8 @@ export default function Home() {
     <>
       <h1 className="mt-20 flex items-center justify-center gap-[5px] text-[25px] font-black">
         <img
-          className="h-6 w-6 rounded-full shadow-title-logo"
+          className="h-6 w-6 rounded-md"
+          style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
           src="/title-logo.svg"
           alt="title-icon"
         />
@@ -50,6 +52,7 @@ export default function Home() {
       <Hero />
       {category.length > 0 && <Category category={category} />}
       {tasks.length > 0 && <Reviews tasks={tasks} />}
+      <Overview />
       <CardBox />
       <CommunityHero />
     </>

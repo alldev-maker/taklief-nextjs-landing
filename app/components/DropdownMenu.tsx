@@ -87,14 +87,12 @@ const DropdownMenu = ({ text, isActive }: any) => {
             >
               {t("client_hasnt_released")}
             </a>
-            {/* <form method="POST" action="#">
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Sign out
-              </button>
-            </form> */}
+            <a
+              href="/contact-us"
+              className="font-sfpro text-[15px] font-bold text-sky-400"
+            >
+              {t("contact_us")}
+            </a>
           </div>
         </div>
       )}

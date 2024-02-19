@@ -1,73 +1,60 @@
 "use client";
 import React from "react";
-import Hero from "../components/Hero";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-// import { useRouter } from "next/router";
+import CommunityHero from "../components/CommunityHero";
+import Overview from "../components/Overview";
 
-// const task = {
-//   taskTitle: "Yard Cleanup",
-//   taskLocation: "Al-Olaya, Riyadh",
-//   taskBudget: 650,
-//   taskDate: "20 November 2023",
-//   taskCompletionDate: "Evening",
-//   taskStatus: "Open",
-//   taskUser: {
-//     userImage: "/Ellipse 42.svg",
-//   },
-// };
 const serverUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const Profile = () => {
+  // user profile data
+  const [user, setUser] = React.useState({
+    user_name: "",
+    city: "",
+    country: "",
+    profile_pic: "",
+  });
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(false);
+  const [task, setTask] = React.useState([]);
 
-    // user profile data
-    const [user, setUser] = React.useState({
-      user_name: "",
-      city: "",
-      country: "",
-      profile_pic: "",
-    });
-    const [loading, setLoading] = React.useState(true);
-    const [error, setError] = React.useState(false);
-    const [task, setTask] = React.useState([]);
- 
-    // get id from url
-    let url='';
-if (typeof window !== 'undefined') {
-  url = window.location.href;
-}
-    // const url = url.substring(url.lastIndexOf('/') + 1);
-    // after ?
-    const id = url.split('?')[1];
-    console.log(id);
+  // get id from url
+  let url = "";
+  if (typeof window !== "undefined") {
+    url = window.location.href;
+  }
+  // const url = url.substring(url.lastIndexOf('/') + 1);
+  // after ?
+  const id = url.split("?")[1];
+  console.log(id);
 
-    React.useEffect(() => {
-      const fetchData = async () => {
-        try {
-          //https://148.72.245.179/api/profile?user_id=4
-          const response = await fetch(`${serverUrl}/profile?user_id=${id}`);
-          const data = await response.json();
-          if (data && data.status === 422) {
-            console.log("not found");
-            window.location.href = "/404";
-            setError(true);
-          }
-          console.log(data);
-          setUser(data.data);
-          setLoading(false);
-        } catch (error) {
-          // 422 
-          if ((error as any).response && (error as any).response.status === 422) {
-            console.log("not found");
-            window.location.href = "/404";
-            setError(true);
-          }
-          setLoading(false);
+  React.useEffect(() => {
+    const fetchData = async () => {
+      try {
+        //https://148.72.245.179/api/profile?user_id=4
+        const response = await fetch(`${serverUrl}/profile?user_id=${id}`);
+        const data = await response.json();
+        if (data && data.status === 422) {
+          console.log("not found");
+          window.location.href = "/404";
+          setError(true);
         }
-      };
-      fetchData();
-    }, [id]);
-
+        console.log(data);
+        setUser(data.data);
+        setLoading(false);
+      } catch (error) {
+        // 422
+        if ((error as any).response && (error as any).response.status === 422) {
+          console.log("not found");
+          window.location.href = "/404";
+          setError(true);
+        }
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, [id]);
 
   const { t } = useTranslation();
   return (
@@ -90,7 +77,6 @@ if (typeof window !== 'undefined') {
                 className="mx-auto rounded-full border-4 border-white"
                 // user profile data
                 src={user?.profile_pic}
-           
                 width={150}
                 height={150}
                 alt="user"
@@ -126,8 +112,8 @@ if (typeof window !== 'undefined') {
           </div>
         </div>
       </div>
-
-      <Hero />
+      <Overview />
+      <CommunityHero />
     </div>
   );
 };

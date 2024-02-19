@@ -1,3 +1,4 @@
+import CommunityHero from "../components/CommunityHero";
 import Breadcrumb from "../components/shared/Breadcrumb";
 
 export default function WhenWillGetPaid() {
@@ -72,6 +73,7 @@ export default function WhenWillGetPaid() {
           after he completed the task.
         </p>
       </div>
+      <CommunityHero />
     </section>
   );
 }

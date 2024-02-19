@@ -1,23 +1,12 @@
 import React from "react";
-import CommunityHeroImage from "../../public/WorldCommunity.svg";
-import CommunityHeroMobImage from "../../public/WorldCommunityMob.svg";
-import Image from "next/image";
 
 const CommunityHero = () => {
   return (
-    <section>
-      <div className="flex w-full overflow-hidden">
-        <Image
-          className="mx-auto hidden sm:block"
-          src={CommunityHeroImage}
-          alt="Community Hero"
-        />
-        <Image
-          className="mx-auto sm:hidden"
-          src={CommunityHeroMobImage}
-          alt="Community Hero"
-        />
-      </div>
+    <section className="container py-5">
+      <p className="text-left text-[38px] font-black leading-none text-[#C5CDD9] sm:text-center">
+        Made for
+        <br /> the community.
+      </p>
     </section>
   );
 };

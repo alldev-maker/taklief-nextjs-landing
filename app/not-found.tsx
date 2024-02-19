@@ -1,12 +1,14 @@
 import React from "react";
 import NotFoundComponent from "./components/404NotFound";
-import Hero from "./components/Hero";
+import Overview from "./components/Overview";
+import CommunityHero from "./components/CommunityHero";
 
 const NotFound = () => {
   return (
     <div className="mt-[130px] flex h-full w-full flex-col justify-center">
       <NotFoundComponent />
-      <Hero />
+      <Overview />
+      <CommunityHero />
     </div>
   );
 };

@@ -7,13 +7,6 @@ import i18n from "../../i18n";
 import DropdownMenu from "../DropdownMenu";
 import LanguageDropdownMenu from "../LanguageDropDownMenu";
 
-const navList = [
-  "home",
-  "tasker_principle",
-  "poster_principle",
-  "community_guideline",
-];
-
 const Header = () => {
   const pathname = usePathname();
   const { t } = useTranslation();

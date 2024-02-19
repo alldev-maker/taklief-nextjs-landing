@@ -17,7 +17,7 @@
 }
 
 .about {
-  @apply mb-10 mt-20;
+  @apply mt-20;
 }
 
 .slick-slide {
