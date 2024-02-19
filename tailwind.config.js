@@ -17,6 +17,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      listStyleType: {
+        disc: 'disc',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
