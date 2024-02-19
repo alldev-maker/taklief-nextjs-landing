@@ -1,24 +1,92 @@
 "use client";
-import React from "react";
+import React,{useEffect} from "react";
 import Hero from "../components/Hero";
 import ReviewItem from "../components/ReviewItem";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Router from 'next/router';
+import axios from "axios";
 
-const task = {
-  taskTitle: "Yard Cleanup",
-  taskLocation: "Al-Olaya, Riyadh",
-  taskBudget: 650,
-  taskDate: "20 November 2023",
-  taskCompletionDate: "Evening",
-  taskStatus: "Open",
-  taskUser: {
-    userImage: "/Ellipse 42.svg",
-  },
-};
+
+const serverUrl = process.env.NEXT_PUBLIC_API_URL;
+
+const getTask = async () => {
+  try {
+
+  // get id from url
+  const url = window.location.href;
+  // const url = url.substring(url.lastIndexOf('/') + 1);
+  // after ? 
+
+   const id = url.split('?')[1];
+  console.log(id);
+  // i need like this ?id=1 
+  // const pram = new URLSearchParams(id);
+  // console.log(pram);
+  
+  const response = await axios.get(`${serverUrl}/task?id=`.concat(id)); 
+  console.log(response);
+  // if response 404 go to 404 page
+  if (response.status === 404) {
+    console.log("not found");
+  }
+  // if not found go to 404
+  if (response.data.data.length === 0) {
+ console.log("not found");
+  }
+  return response.data.data;
+  } catch (error)  {
+      console.log("not found");
+
+     
+      // ...
+
+      Router.push('/404');
+            
+      // Redirect to 404 page here
+    
+    return error;
+   }
+  }
+
+  // update task use effect
+ 
 
 const Post = () => {
+  
+  const [task, setTask] = React.useState([]);
+  // const router = useRouter();
   const { t } = useTranslation();
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const url = window.location.href;
+  // const url = url.substring(url.lastIndexOf('/') + 1);
+  // after ? 
+
+   const id = url.split('?')[1];
+ 
+        const response = await axios.get(`${serverUrl}/task?id=`.concat(id)); 
+        console.log(response);
+        if (response.status === 404 || response.data.data.length === 0) {
+          console.log("not found");
+          window.location.href = '/404';       
+         } else {
+          setTask(response.data.data);
+        }
+      } catch (error) {
+          console.log("not found");
+          if (typeof window !== 'undefined') {
+// it's safe to use window now
+            //window.location.href = '/404';
+                  }
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  
   return (
     <div className="mt-20 flex h-full w-full flex-col justify-center ">
       <div className="flex w-full flex-col items-center justify-center space-y-[10px] align-middle">

@@ -55,7 +55,7 @@ const DropdownMenu = ({ text, isActive }: any) => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute top-11 z-10 min-w-[300px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white p-2.5 md:min-w-[320px] md:p-5">
+        <div className="absolute -left-5 top-11 z-10 min-w-[300px] origin-top-right rounded-[10px] border border-[#C5CDD9] bg-white p-2.5 md:min-w-[320px] md:p-5">
           <div className="flex flex-col items-start gap-2.5 text-left">
             <a
               href="/tasker-principle"

@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import TempImg from "../../public/test.png";
 
@@ -16,18 +15,16 @@ const Category = (props: any) => {
         {category?.map((item: any, index: number) => {
           return (
             <div className="text-center" key={index}>
-              <div className="inline-flex h-[100px] w-[100px] flex-col items-center justify-center rounded-full border border-slate-300 bg-slate-100 p-[30px] text-center">
-                <Image
-                  src={item.image}
-                  className="mx-auto "
+              <div className="inline-flex h-[100px] w-[100px] flex-col items-center justify-center rounded-full border border-slate-300 bg-slate-100 text-center">
+                <img
+                  src={item.image ? `${item.image}` : TempImg}
+                  className="mx-auto w-full"
                   alt={`${item.image} not find`}
-                  width={40}
-                  height={40}
                 />
               </div>
 
               <p className="mx-auto mt-[5px] flex max-w-[61px] items-center justify-center text-center font-sfpro text-[15px] text-black">
-                {t(item.name)}
+                {t(item.title)}
               </p>
             </div>
           );
