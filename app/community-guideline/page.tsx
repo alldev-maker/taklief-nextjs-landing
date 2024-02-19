@@ -13,7 +13,7 @@ export default function CommunityGuideline() {
           {t("are_there_any_task_posting_guidelines")}
         </h3>
 
-        <p className="border-l-2 border-sky-400 pl-[10px]">
+        <p className="border-l-[3px] border-sky-400 pl-[10px]">
           {t("community_guideline_1")}
         </p>
 
@@ -39,7 +39,7 @@ export default function CommunityGuideline() {
           {t("task_guidelines.section_d.title")}
         </h6>
 
-        <p className="border-l-2 border-sky-400 pl-[10px]">
+        <p className="border-l-[3px] border-sky-400 pl-[10px]">
           {t("task_guidelines.section_d.highlighted")}
         </p>
 
@@ -80,28 +80,28 @@ export default function CommunityGuideline() {
 
         <ul>
           <li>
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_e.example_1.title")}</strong>
               &nbsp;{t("task_guidelines.section_e.example_1.content")}
             </div>
             <br />
             {/* <br /> */}
             {/* <br /> */}
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_e.example_2.title")}</strong>
               &nbsp;{t("task_guidelines.section_e.example_2.content")}
             </div>
             <br />
             {/* <br /> */}
             {/* <br /> */}
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_e.example_3.title")}</strong>
               &nbsp;{t("task_guidelines.section_e.example_3.content")}
             </div>
             <br />
             {/* <br /> */}
             {/* <br /> */}
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_e.example_4.title")}</strong>
               &nbsp;{t("task_guidelines.section_e.example_4.content")}
             </div>
@@ -150,14 +150,14 @@ export default function CommunityGuideline() {
           <li>&nbsp;</li>
           <li>&nbsp;</li> */}
           <li>
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_f.example_1.title")}</strong>
               &nbsp;{t("task_guidelines.section_f.example_1.content")}
             </div>
             {/* <br /> */}
             {/* <br /> */}
             <br />
-            <div className="border-l-2 border-amber-300 pl-[10px]">
+            <div className="border-l-[3px] border-amber-300 pl-[10px]">
               <strong>{t("task_guidelines.section_f.example_2.title")}</strong>
               &nbsp;{t("task_guidelines.section_f.example_2.content")}
             </div>

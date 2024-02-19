@@ -1,16 +1,20 @@
 import CommunityHero from "../components/CommunityHero";
+import Breadcrumb from "../components/shared/Breadcrumb";
 
 export default function ServiceTerms() {
   return (
     <section className="about">
-      <div className="container">
+      <div className="container flex flex-col gap-5 text-[15px]">
+        <Breadcrumb pageName="terms_of_service" />
+
         <h2>
           <strong>Terms and Conditions</strong>
         </h2>
 
-        <p>
-          Here are our terms and conditions. Country Specific Terms in Appendix
-          B shall also apply to this Agreement.
+        <p>Here are our terms and conditions.</p>
+        <p className="border-l-[3px] border-sky-400 pl-[10px]">
+          Country Specific Terms in Appendix B shall also apply to this
+          Agreement.
           <br />
           The Taklief terms &amp; conditions (updated July 2020) outline
           Taklief's and Your obligations and responsibilities on the Taklief
@@ -18,11 +22,11 @@ export default function ServiceTerms() {
         </p>
 
         <p>
-          <br />
-          User Agreement:&nbsp;
-          <a href="javascript:void(0);">www.Taklief.com</a>
-          <br />
-          &nbsp;
+          <strong>
+            User Agreement:&nbsp;
+            <a href="https://taklief.com/">www.Taklief.com</a>
+            <br />
+          </strong>
         </p>
 
         <p>
