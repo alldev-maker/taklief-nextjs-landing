@@ -6,7 +6,9 @@ export default function TaskerPrinciple() {
     <section className="about">
       <div className="container flex flex-col gap-5">
         <Breadcrumb pageName="tasker_principle" />
-        <h3>Principles of a Professional Service Provider (Tasker)</h3>
+        <h3 className="font-bold">
+          Principles of a Professional Service Provider (Tasker)
+        </h3>
 
         <p>
           At Taklief, we seek to build a professional community capable of

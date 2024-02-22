@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Overview from "./components/Overview";
 import Category from "./components/Category";
@@ -27,6 +28,7 @@ const getTasks = async () => {
 };
 
 export default function Home() {
+  const { t } = useTranslation();
   const [category, setCategory] = useState([]);
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
@@ -40,15 +42,18 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="mt-20 flex items-center justify-center gap-[5px] text-[25px] font-black">
+      <a
+        href="/"
+        className="mt-20 flex items-center justify-center gap-2 text-[25px] font-black"
+      >
         <img
-          className="h-6 w-6 rounded-md"
+          className="h-6 w-6 rounded-md object-contain"
           style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
           src="/title-logo.svg"
           alt="title-icon"
         />
-        Get things done
-      </h1>
+        {t("get_things_done")}
+      </a>
       <Hero />
       {category.length > 0 && <Category category={category} />}
       {tasks.length > 0 && <Reviews tasks={tasks} />}

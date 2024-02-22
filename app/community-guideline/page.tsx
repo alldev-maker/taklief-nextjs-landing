@@ -1,6 +1,7 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../components/shared/Breadcrumb";
+import CommunityHero from "../components/CommunityHero";
 
 export default function CommunityGuideline() {
   const { t } = useTranslation();
@@ -164,6 +165,7 @@ export default function CommunityGuideline() {
           </li>
         </ul>
       </div>
+      <CommunityHero />
     </section>
   );
 }

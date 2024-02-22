@@ -6,7 +6,9 @@ export default function ReleasePayment() {
     <section className="about">
       <div className="container flex flex-col gap-5">
         <Breadcrumb pageName="client_hasnt_released" />
-        <h3>The customer hasn't released payment yet, what do I do?</h3>
+        <h3 className="font-bold">
+          The customer hasn't released payment yet, what do I do?
+        </h3>
         <p>
           If you've completed a task but the customer hasn't released payment
           yet, don't panic, stay calm! Here are some steps to follow that can

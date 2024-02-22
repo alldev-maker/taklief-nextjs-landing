@@ -1,12 +1,15 @@
-import React from "react";
+"use client";
+import { useTranslation } from "react-i18next";
 
 const CommunityHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="container py-5">
-      <p className="text-left text-[38px] font-black leading-none text-[#C5CDD9] sm:text-center">
-        Made for
-        <br /> the community.
-      </p>
+      <div
+        className="text-left text-[38px] font-black leading-none text-[#C5CDD9] sm:text-center"
+        dangerouslySetInnerHTML={{ __html: t("made_for_community") }}
+      />
     </section>
   );
 };

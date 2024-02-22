@@ -1,6 +1,6 @@
 {
   "homepage_headline": "An integrated digital platform that brings together quality service providers and quality work seekers in various fields needed by the community",
-  "made_for_community": "Made for the community",
+  "made_for_community": "Made for<br/>the community",
   "hero_text": "Connect, Delegate, Complete. <br/> A platform that empowers you to outsource your tasks, and offer your skills for hire.",
   "get_it_done": "Post a task & get offers",
   "get_things_done": "Get things done",
@@ -10,7 +10,7 @@
   "poster_principles": "Poster Principles",
   "tasker_principles": "Tasker Principles",
   "when_will_i_get_paid": "When will I get paid?",
-  "ios_app": "iOS App",
+  "ios_app": " Beta",
   "coming_soon": "Coming soon",
   "about_taklief": "Taklief is a Saudi platform based in Riyadh that provides mobile marketplace to enable users to outsource their daily tasks. Users describe the task and set its budget, then community members place their bids to attempt to complete the task.",
   "what_do_you_need": "What do you need done?",
@@ -125,7 +125,7 @@
   "user_agreement": "User Agreement:",
   "taklief_terms_and_conditions": "Country Specific Terms in Appendix B shall also apply to this Agreement.",
   "taklief_terms_and_conditions_2": "The Taklief terms & conditions (updated July 2020) outline Taklief's and Your obligations and responsibilities on the Taklief Platform.",
-  "taklief_website": "www.Taklief.com",
+  "taklief_website": "www.Taklief.org",
   "taklief_platform_description": "Taklief operates an online platform allowing Users to connect through the Taklief Platform with other Users who provide Services. Please read these terms and all Policies including the Community Guidelines carefully before using the Taklief Platform. These Policies are incorporated into this Agreement by reference.",
   "taklief_platform_description_2": "All defined terms in this Agreement have the meaning given to them in the Taklief Glossary.",
   "scope_of_taklief_services": "1. SCOPE OF TAKLIEF SERVICES",
@@ -260,7 +260,7 @@
   "payment_facility_section": {
     "title": "8. PAYMENT FACILITY",
     "payment_facility_8_1": "8.1 Taklief uses a Payment Provider to operate the Payment Account.",
-    "payment_facility_8_2": "8.2 In so far as it is relevant to the provision of the Payment Account, the terms at https://stripe.com/au/ssa are incorporated into this Agreement and will prevail over this Agreement to the extent of any inconsistency in relation to the provision of the Payment Account.",
+    "payment_facility_8_2": "8.2 In so far as it is relevant to the provision of the Payment Account, the terms at https://clickpay.com.sa are incorporated into this Agreement and will prevail over this Agreement to the extent of any inconsistency in relation to the provision of the Payment Account.",
     "payment_facility_8_3": "8.3 If Taklief changes its Payment Provider You may be asked to agree to any further additional terms with those providers. If you do not agree to them, you will be given alternative means of payment."
   },
   "third_party_services_section": {
@@ -376,7 +376,7 @@
     "taklief_platform": "\"Taklief Platform\" means the Taklief website at http://www.taklief.org/, Taklief smartphone app, and any other affiliated platform that may be introduced from time to time.",
     "taklief_service": "\"Taklief Service\" means the service of providing the Taklief Platform.",
     "badge": "\"Badge\" means an Taklief Badge and Verification Icon.",
-    "business_day": "\"Business Day\" means a day on which banks are open for general business in the jurisdiction where Users have their Taklief Platform account, other than a Saturday, Sunday or public holiday.",
+    "business_day": "\"Business Day\" means a day on which banks are open for general business in the jurisdiction where Users have their Taklief Platform account, other than a Friday, Saturday or public holiday.",
     "business_partner_contract": "\"Business Partner Contract\" means a contract between a Business Partner and a Tasker to perform Business Services.",
     "business_partner": "\"Business Partner\" means the business or individual that enters into an agreement with Taklief to acquire Business Services.",
     "business_services": "\"Business Services\" means Services provided by a Tasker to a Business Partner acquired for the purpose of on selling to a third party (such as the Business Partner's customer).",

@@ -73,12 +73,10 @@ const Profile = () => {
           <div className="relative z-10">
             <div className="mx-auto mb-5 mt-[125px] w-auto overflow-hidden rounded-full ">
               {/* User image */}
-              <Image
-                className="mx-auto rounded-full border-4 border-white"
+              <img
+                className="mx-auto h-[150px] w-[150px] rounded-full border-4 border-white object-cover"
                 // user profile data
                 src={user?.profile_pic}
-                width={150}
-                height={150}
                 alt="user"
               />
             </div>

@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
 import ReviewItem from "./ReviewItem";
 
 const Reviews = (props: any) => {
@@ -13,8 +12,8 @@ const Reviews = (props: any) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 0,
     speed: 5000,
-    autoplaySpeed: 1000,
     centerMode: true,
     variableWidth: true,
     cssEase: "linear",

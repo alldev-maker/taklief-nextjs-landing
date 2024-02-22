@@ -1,10 +1,3 @@
-import Image from "next/image";
-import React from "react";
-
-import { default as ClockIcon } from "../../assets/clock.svg";
-import { default as CalendarIcon } from "../../assets/calendar.svg";
-import { default as LocationIcon } from "../../assets/location.svg";
-
 const ReviewItem = (props: any) => {
   const { task, bgColor = "bg-slate-100" } = props;
 
@@ -20,16 +13,18 @@ const ReviewItem = (props: any) => {
           SR {task?.budget}
         </span>
       </div>
+      {task?.suburb && (
+        <div className="flex items-center gap-[5px]">
+          <img src={"/location.svg"} className="h-4 w-4" alt="location" />
+          <span className="text-[13px]">{task?.suburb}</span>
+        </div>
+      )}
       <div className="flex items-center gap-[5px]">
-        <Image src={LocationIcon} className="h-4 w-4" alt="location" />
-        <span className="text-[13px]">{task?.suburb}</span>
-      </div>
-      <div className="flex items-center gap-[5px]">
-        <Image src={CalendarIcon} alt="calendar" className="h-4 w-4" />
+        <img src={"/calendar.svg"} alt="calendar" className="h-4 w-4" />
         <span className="text-[13px]">{task?.due_date}</span>
       </div>
       <div className="flex items-center gap-[5px]">
-        <Image src={ClockIcon} alt="clock" className="h-4 w-4" />
+        <img src={"/clock.svg"} alt="clock" className="h-4 w-4" />
         <span className="text-[13px]">{task.due_date}</span>
       </div>
       <div className="flex items-center justify-between">
@@ -43,7 +38,7 @@ const ReviewItem = (props: any) => {
           </span>
         )}
         <img
-          className="h-10 w-10 rounded-full"
+          className="h-10 w-10 rounded-full object-cover"
           src={task?.profile_pic ? `${task?.profile_pic}` : "/wing.svg"}
           alt="wing"
         />

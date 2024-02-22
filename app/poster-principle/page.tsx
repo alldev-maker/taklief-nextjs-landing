@@ -6,7 +6,7 @@ export default function PosterPrinciple() {
     <section className="about">
       <div className="container flex flex-col gap-5">
         <Breadcrumb pageName="poster_principles" />
-        <h3>Service Requester Principles (Poster)</h3>
+        <h3 className="font-bold">Service Requester Principles (Poster)</h3>
 
         <p>
           In Taklief, we realise your keenness to find professional competencies

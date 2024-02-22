@@ -6,7 +6,7 @@ export default function WhenWillGetPaid() {
     <section className="about">
       <div className="container flex flex-col gap-5">
         <Breadcrumb pageName="when_will_i_get_paid" />
-        <h3>When will I get paid ?</h3>
+        <h3 className="font-bold">When will I get paid ?</h3>
         <p>
           When you complete a task and click Request payment, the Poster is sent
           a notification alerting them that they should release the payment if

@@ -1,0 +1,16 @@
+{
+  "theme_color": "#1fd4c0",
+  "background_color": "#259409",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Taklief",
+  "short_name": "Taklief",
+  "description": "A random advice generator",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "/favicon.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

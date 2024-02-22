@@ -7,7 +7,7 @@ export default function ServiceTerms() {
   const { t } = useTranslation();
 
   return (
-    <section className="about px-[116px]">
+    <section className="about">
       <div className="container flex flex-col gap-5 px-5 text-[15px]">
         <Breadcrumb pageName="terms_of_service" />
         <h2>

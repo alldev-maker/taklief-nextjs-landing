@@ -45,7 +45,8 @@ export default function RootLayoutProvider({
   return (
     <html className={`${SFProText.variable} font-sfpro`}>
       <title>Taklief | Home Page</title>
-
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="manifest" href="/manifest.json" />
       <body suppressHydrationWarning={true}>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <main>

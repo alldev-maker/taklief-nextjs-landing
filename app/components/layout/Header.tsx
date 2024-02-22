@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header>
       <nav className="header fixed top-0 z-30 w-full border-b border-[#C5CDD9] bg-white py-2.5">
-        <div className="container flex flex-wrap items-center justify-between px-20">
+        <div className="container flex flex-wrap items-center justify-between px-5">
           <ul className="text-black-500 flex items-center ">
             <Link
               href="/"

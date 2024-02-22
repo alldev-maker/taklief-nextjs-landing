@@ -20,9 +20,12 @@ const Overview = () => {
             </span>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
             <img className="h-6 w-6" src="/BlueAppleIcon.svg" alt="No Img" />
-            <p className="font-sfpro font-[15px] text-sky-400">
+            <a
+              href="https://testflight.apple.com/join/dwqfAat5"
+              className="font-sfpro font-[15px] text-sky-400"
+            >
               {t("ios_app")}
-            </p>
+            </a>
           </div>
         </div>
         <div className="flex flex-col justify-center gap-5">
@@ -32,15 +35,24 @@ const Overview = () => {
             alt="No Img"
           />
           <div className="flex justify-center space-x-[5px]">
-            <span className="flex font-sfpro text-[15px] font-normal text-black">
+            <a
+              href="#"
+              className="flex font-sfpro text-[15px] font-normal text-black"
+            >
               {t("for")}
-              <p className="ml-1 font-semibold">Android</p>
-            </span>
+              <span className="ml-1 font-semibold">Android</span>
+            </a>
             <div className="w-[2px] bg-slate-300 py-[1px]"></div>
-            <img className="h-6 w-6" src="/BlueAndroidIcon.svg" alt="No Img" />
-            <p className="font-sfpro font-[15px] text-sky-400">
-              {t("coming_soon")}
-            </p>
+            <a href="#" className="flex items-center">
+              <img
+                className="h-6 w-6"
+                src="/BlueAndroidIcon.svg"
+                alt="No Img"
+              />
+              <span className="font-sfpro font-[15px] text-sky-400">
+                {t("coming_soon")}
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -58,14 +70,16 @@ const Overview = () => {
             <p className="ml-1 font-semibold">Web</p>
           </span>
           <div className="w-[2px] bg-slate-300 py-[1px]"></div>
-          <img
-            className="h-6 w-6"
-            src="/BlueWindowfilledIcon.svg"
-            alt="No Img"
-          />
-          <p className="font-sfpro font-[15px] text-sky-400">
-            {t("coming_soon")}
-          </p>
+          <a href="#" className="flex items-center">
+            <img
+              className="h-6 w-6"
+              src="/BlueWindowfilledIcon.svg"
+              alt="No Img"
+            />
+            <span className="font-sfpro font-[15px] text-sky-400">
+              {t("coming_soon")}
+            </span>
+          </a>
         </div>
       </div>
     </section>
